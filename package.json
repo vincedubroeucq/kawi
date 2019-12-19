@@ -1,0 +1,31 @@
+{
+  "name": "kawi",
+  "version": "1.0.0",
+  "description": "Kawi is a solid and clean theme for blogs and any other sites. It has clean typography, plenty of white space and puts the emphasis on your content.",
+  "main": "index.js",
+  "scripts": {
+    "babel": "babel js/src/main.js -o js/main.js",
+    "eol": "eolConverter js/main.js",
+    "uglify": "uglifyjs --compress --mangle --output js/main.min.js -- js/main.js",
+    "js": "npm run babel && npm run eol && npm run uglify",
+    "process-css": "postcss style.css -o style.min.css",
+    "process-editor-css": "postcss editor-style.css -o editor-style.min.css",
+    "css": "npm run process-css & npm run process-editor-css",
+    "copy": "copyfiles -e node_modules/**/* **/* C:/Users/Vincent/Desktop/kawi",
+    "build": "npm run css && npm run js && npm run copy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vincent Dubroeucq",
+  "license": "GPL-2.0-or-later",
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "autoprefixer": "^9.6.0",
+    "copyfiles": "^2.1.1",
+    "cssnano": "^4.1.10",
+    "eol-converter-cli": "^1.0.8",
+    "postcss-cli": "^6.1.2",
+    "uglify-js": "^3.6.0"
+  }
+}

@@ -1,0 +1,266 @@
+/**************************
+ * Content area 
+ **************************/
+.site {
+    overflow: hidden;
+}
+
+.content-area {
+    margin: 0 auto;
+    max-width: $xxl;
+}
+
+.single.no-sidebar.hero-background .content-area,
+.single.no-sidebar.header-background .content-area,
+.single.sidebar-bottom.hero-background .content-area,
+.single.sidebar-bottom.header-background .content-area,
+.page.hero-background .content-area,
+.page.header-background .content-area {
+    @media screen and (min-width: $lg){
+        margin-top: -100px;
+        z-index: 100;
+    }
+    @media screen and (min-width: $xl){
+        margin-top: -150px;
+    }
+} 
+
+.sidebar-left .content-area,
+.sidebar-right .content-area {
+    @media screen and (min-width: $lg){
+        display: grid;
+        grid-auto-flow: row dense;
+    }
+    @media screen and (min-width: $xl){
+        grid-gap: $sp-xl; 
+    }
+}
+
+.sidebar-right .content-area {
+    @media screen and (min-width: $lg){
+        grid-template-columns: minmax(0, 2fr) 1fr;
+    }
+}
+
+.sidebar-left {
+    .content-area {
+        grid-template-columns: 1fr minmax(0, 2fr);
+    }
+    .main-content {
+        @media screen and (min-width: $lg){
+            grid-column-start: 2;
+        }
+    }
+} 
+
+.content-wrapper {
+    max-width: $md;
+    margin: 0 auto;
+    @media screen and (min-width: $lg) {
+        max-width: 850px;
+    }
+    @media screen and (min-width: $xl) {
+        max-width: $lg;
+    }
+}
+
+@media screen and (min-width: $xxl) {
+    .sidebar-left .content-wrapper,
+    .sidebar-right .content-wrapper {
+        max-width: none;
+    }
+}
+
+.hentry,
+.no-results,
+.error-404 {
+    background-color: #fff;
+    border-top: 8px solid $grey-900;
+    padding: $sp-sm;
+    margin-bottom: $sp-xl;
+    @media screen and (min-width: $lg){
+        padding: $sp-md;
+    }
+}
+
+.post-thumbnail {
+    display: block;
+    margin: #{-$sp-sm} #{-$sp-sm} #{$sp-sm} #{-$sp-sm};
+    @media screen and (min-width: $lg){
+        margin: #{-$sp-md} #{-$sp-md} #{$sp-md} #{-$sp-md};
+    }
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.post-title {
+    margin-top: 0;
+    word-break: break-word;
+    a {
+        text-decoration: none;
+    }
+    @media screen and (max-width: $sm) {
+        font-size: $txt-xl;
+    }
+}
+
+.post-meta {
+    color: $grey-500;
+    font-size: $txt-sm;
+    margin: 0;
+    a {
+        color: inherit;
+        &:hover,
+        &:focus {
+            color: white;
+        }
+    }
+}
+
+.post-meta-item {
+    align-items: center;
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-right: $sp-sm;
+    .icon {
+        margin-right: $sp-2xs;
+    }
+}
+
+.published:not(.updated) {
+    display: none;
+}
+
+.date-hidden .posted-on,
+.author-hidden .byline,
+.categories-hidden .categories,
+.tags-hidden .tags,
+.comment-hidden .comment-link {
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+}
+
+.seperator {
+    display: inline-block;
+    margin: 0 $sp-3xs;
+}
+
+.small-thumbnail {
+    border-top: none;
+    border-left: 8px solid $grey-900;
+
+    .post-header {
+        align-items: center;
+        display: flex;
+    }
+
+    .post-thumbnail {
+        flex-basis: 75px;
+        flex-shrink: 0;
+        margin: 0 $sp-sm 0 0;
+        img {
+            display: block;
+            max-width: 75px;
+        }
+        @media screen and (min-width: $md){
+            flex-basis: 100px;
+            img {
+                max-width: 100px;
+            }
+        }
+        @media screen and (min-width: $lg){
+            margin-right: $sp-md;
+        }
+        @media screen and (min-width: $xl){
+            flex-basis: 150px;
+            img {
+                max-width: 150px;
+            }
+        }
+    }
+}
+
+.small-thumbnail.has-post-thumbnail {
+    .post-header {
+        margin-bottom: $sp-md;
+    }
+    .post-title {
+        margin: 0;
+    }
+}
+
+.post-content {
+    word-wrap: break-word;
+}
+
+.more-link {
+    display: inline-block;
+    margin-bottom: $sp-md;
+}
+
+.post-footer {
+    border-top: 1px solid $grey-200;
+    clear: both;
+    color: $grey-500;
+    font-size: $txt-sm;
+    padding:  $sp-sm 0; 
+    @media screen and ( min-width: $sm ) {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+
+        .edit-link {
+            margin-left: $sp-md;
+        }
+    }
+}
+
+// Removes post footer if every data in it is hidden
+:not(.logged-in).comment-hidden.tags-hidden .post-footer {
+    display: none;
+}
+
+.tags,
+.edit-link,
+.comment-link,
+.reply-link {
+    align-items: center;
+    display: flex;
+    .icon {
+        margin-right: $sp-2xs;
+    }
+}
+
+.tags {
+    margin-right: auto;
+}
+
+.sticky {
+    background-color: $grey-900;
+    color: white;
+    .post-meta,
+    .post-footer, 
+    a:visited {
+        color: white;
+    }
+    a:hover, a:focus {
+        background-color: white;
+        color: $grey-900;
+    }
+}
+
+#infinite-handle {
+    span {
+        font-size: inherit;
+    }
+}
+
+.infinite-scroll .posts-navigation {
+    display: none;
+}

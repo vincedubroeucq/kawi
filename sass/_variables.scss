@@ -1,0 +1,76 @@
+$black: #22292f;
+$grey-900: #3d4852;
+$grey-700: #58636F; 
+$grey-500: #677783;
+$grey-400: #9AACB6;
+$grey-300: #bac6d3;
+$grey-200: #dae1e7;
+$grey-100: #f1f5f8;
+
+// $color-text: $grey-900;
+// $color-link: $color-primary;
+// $color-link-hover: $color-primary-lighter;
+// $color-link-visited: $color-primary-darker;
+
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1280px;
+$xxl:1600px;
+
+$main-font: 'Muli', 'system-ui', 'BlinkMacSystemFont', '-apple-system', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'sans-serif';
+$mono-font: 'Oxygen Mono', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', 'monospace';
+
+$txt-2xs: .6875rem;  // 11px
+$txt-xs:  .75rem;    // 12px
+$txt-sm:  .875rem;   // 14px
+$txt-md:  1rem;      // 16px
+$txt-lg:  1.125rem;  // 18px
+$txt-xl:  1.25rem;   // 20px
+$txt-2xl: 1.5rem;    // 24px
+$txt-3xl: 1.75rem;   // 28px
+$txt-4xl: 2rem;      // 32px
+$txt-5xl: 2.75rem;   // 44px
+$txt-6xl: 4rem;      // 64px
+
+$sp-4xs: .125rem;
+$sp-3xs: .25rem; 
+$sp-2xs: .5rem;
+$sp-xs: .75rem;
+$sp-sm: 1rem;
+$sp-md: 1.5rem;
+$sp-lg: 2rem;
+$sp-xl: 3rem;
+$sp-2xl: 4rem;
+$sp-3xl: 6rem;
+$sp-4xl: 8rem;
+
+// Gallery columns templates
+@mixin gallery-columns() {
+    .gallery-columns-1 {
+	    grid-template-columns: 1fr;
+    }
+    .gallery-columns-2 {
+	    grid-template-columns: 1fr 1fr;
+    }
+    .gallery-columns-3 {
+        grid-template-columns: 1fr 1fr;
+        @media screen and (min-width: $sm){
+            grid-template-columns: repeat( 3, 1fr );
+        }
+    }
+    @for $i from 4 through 9 {
+        .gallery-columns-#{$i}{
+            grid-template-columns: repeat( 2, 1fr );
+            @media screen and (min-width: $sm){
+                grid-template-columns: repeat( 3, 1fr );
+            }
+            @media screen and (min-width: $md){
+                grid-template-columns: repeat( 4, 1fr );
+            }
+            @media screen and (min-width: $lg){
+                grid-template-columns: repeat( #{$i}, 1fr );
+            }
+        }
+    }
+}

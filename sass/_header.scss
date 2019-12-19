@@ -1,0 +1,417 @@
+/**************************
+ * Navigation bar
+ **************************/
+.site-header {
+    border-top: 8px solid $grey-900;
+}
+
+.hero,
+.site-header {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: $xxl;
+    padding: $sp-sm;
+    @media screen and (min-width: $lg){
+        padding: $sp-md;
+    }
+}
+
+.navbar-wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    @media screen and (min-width: $lg){
+        padding-top: $sp-sm;
+        padding-bottom: $sp-sm;
+    }
+}
+
+.site-branding {
+    align-items: center;
+    display: flex;
+    flex-shrink: 0;
+    line-height: 1;
+}
+
+.custom-logo-link {
+    display: inline-block;
+    line-height: 1;
+    transition: all .25s ease-in-out;
+    &:hover,
+    &:focus {
+        background-color: transparent;
+        transform: scale(1.1);
+    }
+}
+
+.custom-logo {
+    max-height: 50px;
+    width: auto;
+}
+
+.site-details {
+    margin-left: $sp-2xs;
+}
+
+.site-title {
+    font-size: $txt-xl;
+    margin: 0;
+    a {
+        text-decoration: none;
+        &:hover,
+        &:focus {
+            color: #fff;
+        }
+    }
+} 
+
+.site-description {
+    color: $grey-500;
+    font-size: $txt-sm;
+    margin: $sp-4xs 0 0;
+}
+
+.sidebar-menu-area {
+    box-shadow: 0 4px 4px 1px $grey-500;
+    background: #ffffff;
+    height: 100vh;
+    max-width: 450px;
+    overflow-x: hidden;
+    position: fixed;
+    right: 0;
+    top: 8px;
+    transition: all .25s ease-in-out;
+    visibility: hidden;
+    width: 0;
+    z-index: -10;
+    @media screen and (min-width: $lg){
+        background: transparent;
+        border-top: none;
+        box-shadow: none;
+        height: auto;
+        margin-left: $sp-md;
+        max-width: none;
+        overflow-x: visible;
+        position: static;
+        visibility: visible;
+        width: auto;
+    }
+}
+
+.sidebar-menu-area.open {
+    visibility: visible;
+    width: 80vw;
+    z-index: 10;
+    @media screen and (min-width: $lg){
+        width: auto;
+    }
+}
+
+.admin-bar .sidebar-menu-area {
+    margin-top: 46px;
+    @media screen and (min-width: 782px){
+        margin-top: 32px;
+    }
+    @media screen and (min-width: $lg){
+        margin-top: 0;
+    }
+}
+
+.main-navigation,
+.footer-menu-section {
+    color: $grey-500;
+    
+    a {
+        border-bottom: 4px solid transparent;
+        border-top: 4px solid transparent;
+        display: inline-block;
+        text-decoration: none;
+    }
+
+    a:hover,
+    a:focus,
+    .current-menu-item a {
+        background-color: transparent;
+        border-bottom-color: $grey-900;
+        color: $grey-900;
+    }
+    
+    a:visited {
+        color: inherit;
+    }
+}
+
+.toggle {
+    background: transparent;
+    border: none;
+    padding: $sp-3xs;
+    &:hover,
+    &:focus {
+        background-color: $grey-900;
+        color: white;
+        svg {
+            fill: currentColor;
+        }
+    }
+    svg {
+        fill: $grey-900;
+        margin: 0;
+    }
+}
+
+.menu-toggle {
+    @media screen and (min-width: $lg){
+        display: none;
+    }
+}
+
+.menu-section {
+    border-top: 1px solid $grey-200; 
+    padding: $sp-sm;
+    @media screen and (min-width: $lg){
+        align-items: flex-end;
+        border-top: none;
+        display: flex;
+        padding: 0;
+    }
+}
+
+.menu-header {
+    align-items: center;
+    border-top: none;
+    display: flex;
+    justify-content: space-between;
+    @media screen and (min-width: $lg){
+        display: none;
+    }
+}
+
+.menu-title {
+    text-transform: uppercase;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    ul {
+        list-style: none;
+    }
+}
+
+.primary-menu {
+    @media screen and (min-width: $lg){
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.menu-item,
+.page_item {
+    position: relative;
+    margin-top: $sp-2xs;
+    @media screen and (min-width: $lg){
+        margin-top: 0;
+        margin-left: $sp-sm;
+    }
+}
+
+.sub-menu,
+.children {
+    font-size: $txt-sm;
+    .menu-item,
+    .page_item {
+        margin-top: $sp-3xs;
+    }
+
+    @media screen and (min-width: $lg){
+        background-color: white;
+        height: max-content;
+        left: 0;
+        opacity: 0;
+        padding: $sp-md;
+        position: absolute;
+        transition: opacity .25s ease-in-out; 
+        visibility: hidden;
+        width: max-content;
+        z-index: -10;
+        ul {
+            position: inherit;
+            padding: 0;
+        }
+    }
+}
+
+.menu-item-has-children, 
+.page_item_has_children {
+    position: relative;
+    &:hover,
+    &:focus-within {
+        .sub-menu,
+        .children {
+            opacity: 1;
+            visibility: visible;
+            z-index: 10;
+        }
+    }
+}
+
+.social-menu {
+    display: inline-flex;
+    flex-wrap: wrap;
+    line-height: 1;
+    margin: $sp-xs 0;
+    
+    li {
+        margin: 0;
+    }
+    
+    a {
+        margin-right: $sp-2xs;
+    }
+
+    @media screen and (min-width: $lg){
+        margin: 0 0 0 $sp-xs;
+        a {
+            margin-left: $sp-3xs;
+            margin-right: 0;
+        }
+    }
+}
+
+/**************************
+ * Hero section
+ **************************/
+.hero {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 320px;
+    overflow: hidden;
+    text-align: center;
+    word-break: break-word;
+}
+
+.hero img {
+    display: block;
+    margin: 0 auto;
+}
+
+.hero-wrapper {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.main-info {
+    margin: $sp-2xl 0;
+}
+
+.main-title {
+    margin: 0 $sp-3xs;
+}
+
+.main-meta {
+    color: $grey-500;
+    margin: $sp-sm 0 0;
+}
+
+.hero-image-full .hero-image {
+    margin-left: calc(50% - 50vw);
+	margin-right: calc(50% - 50vw);
+	width: auto;
+	max-width: 1000%;
+}
+
+.hero-background,
+.header-background {
+    .hero {
+        @media screen and ( min-width: $md ) {
+            height: 50vw;
+            max-height: $lg;
+        }
+    }
+}
+
+// Adjust hero text colors
+.hero-background,
+.header-background {
+    &.light-filter {
+        .main-meta {
+            color: $grey-700;
+        }
+    }
+    &.dark-filter {
+        .main-title, 
+        .main-meta {
+            color: #fff;
+        }
+        .main-meta {
+            opacity: 0.9;
+        }
+    }
+}
+
+// Adjust menu bar colors when header background image is used
+.header-background {
+    &.light-filter {
+        .site-description {
+            color: $grey-700;
+        }
+        @media screen and (min-width: $lg){
+            .main-navigation {
+                color: $grey-700;
+            }
+        }
+    }
+
+    &.dark-filter {
+        .site-title, 
+        .site-description{
+            color: #fff;
+        }
+        .site-description {
+            opacity: .9;
+        }
+        .icon-menu {
+            fill: #fff;
+        }
+        @media screen and (min-width: $lg){
+            .main-navigation {
+                color: #fff;
+                a {
+                    opacity: .9;
+                }
+                a:hover,
+                a:focus,
+                .current-menu-item a {
+                    color: #fff;
+                    opacity: 1;
+                    border-bottom-color: #fff;
+                }
+
+                .sub-menu,
+                .children {
+                    color: $grey-500;
+                    a {
+                        &:hover,
+                        &:focus {
+                            background-color: transparent;
+                            border-bottom-color: $grey-900;
+                            color: $grey-900;
+                        }
+                    }
+                }
+            }
+        }
+    } 
+}
+
+
+

@@ -1,0 +1,96 @@
+/**************************
+ * Form elements
+ **************************/
+input,
+textarea,
+select {
+    background-color: $grey-100;
+    border: 1px solid $grey-200;
+    border-radius: 4px;
+    max-width: 100%;
+    padding: $sp-3xs $sp-xs;
+    transition: all .25s ease-in-out;
+    
+    &::placeholder {
+        color: $grey-500;
+    }
+    
+    &:hover,
+    &:focus {
+        background-color: $grey-200;
+        box-shadow: 0 0 2px 2px $grey-300;
+        outline: none;
+    }
+}
+
+textarea {
+    width: 100%;
+}
+
+button,
+.button,
+.wp-block-button__link,
+.wp-block-file .wp-block-file__button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    align-items: center;
+    background-color: $grey-900;
+    border: 1px solid $grey-900;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    display: inline-flex;
+    padding: $sp-3xs $sp-xs;
+    text-decoration: none;
+    transition: all .25s ease-in-out;
+        
+    &:hover,
+    &:focus {
+        background-color: $grey-700;
+        box-shadow: 0 0 2px 2px $grey-300;
+    }
+
+    &:focus {
+        outline: 1px solid $grey-900;
+    }
+
+    &:visited {
+        color: #fff;
+    }
+    
+    &.button-secondary {
+        background-color: transparent;
+        border-color: $grey-900;
+        color: $grey-900;
+    }
+
+    &.button-tertiary {
+        background-color: transparent;
+        border: none;
+        color: $grey-900;
+        text-decoration: underline;
+    }
+
+    svg {
+        fill: currentcolor;
+        margin-left: $sp-3xs;
+    }
+}
+
+.is-style-outline {
+    .wp-block-button__link {
+        background-color: transparent;
+        border-color: $grey-900;
+        color: $grey-900;
+    }
+}
+
+input[type="checkbox"],
+input[type="radio"]{
+    margin: 0 $sp-3xs;
+}
+
+.big-button .wp-block-button__link {
+    padding: $sp-sm $sp-md;
+}

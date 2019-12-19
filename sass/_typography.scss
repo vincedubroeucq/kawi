@@ -1,0 +1,164 @@
+/**************************
+ * Typography
+ **************************/
+body,
+button,
+input,
+select, 
+optgroup,
+textarea {
+	color: $grey-900;
+	font-family: $main-font;
+	font-size: $txt-md;
+	line-height: 1.6;
+	@media screen and ( min-width: $lg ){
+		font-size: $txt-lg;
+	}
+	@media screen and ( min-width: $xxl ){
+		font-size: $txt-xl;
+	}
+}
+
+dfn, cite, em, i {
+	font-style: italic;
+}
+
+p, blockquote, address, pre {
+	margin-bottom: $sp-md;
+	margin-top: 0;
+}
+
+q {
+	font-style: italic;
+}
+
+pre {
+	background-color: $grey-100;
+	border-left: 8px solid $grey-900;
+	border-radius: 4px;
+	font-family: $mono-font;
+	font-size: $txt-md;
+	max-width: 100%;
+	overflow: auto;
+	padding: $sp-sm;
+	margin: $sp-md 0;
+}
+
+code, kbd, tt, var {
+	font-family: $mono-font;
+}
+
+abbr, acronym {
+	cursor: help;
+}
+
+mark {
+	background-color: $grey-900;
+	color: #fff;
+	text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	line-height: 1.2;
+	margin: 1.5em 0 .5em;
+}
+
+h1, .h1 {
+	font-size: $txt-4xl;
+	@media screen and ( min-width: $lg ) {
+		font-size: $txt-5xl;
+	}
+	@media screen and ( min-width: $xl ) {
+		font-size: $txt-6xl;
+	}
+} 
+
+h2, .h2 {
+	font-size: $txt-3xl;
+	@media screen and ( min-width: $lg ) {
+		font-size: $txt-4xl;
+	}
+	@media screen and ( min-width: $xl ) {
+		font-size: $txt-5xl;
+	}
+}
+
+h3, .h3 {
+	font-size: $txt-2xl;
+	@media screen and ( min-width: $lg ) {
+		font-size: $txt-3xl;
+	}
+	@media screen and ( min-width: $xl ) {
+		font-size: $txt-4xl;
+	}
+}
+
+h4, .h4 {
+	font-size: $txt-xl;
+	@media screen and ( min-width: $lg ) {
+		font-size: $txt-2xl;
+	}
+	@media screen and ( min-width: $lg ) {
+		font-size: $txt-3xl;
+	}
+}
+
+h5, .h5 {
+	font-size: $txt-lg;
+	@media screen and ( min-width: $lg ) {
+		font-size: $txt-xl;
+	}
+	@media screen and ( min-width: $lg ) {
+		font-size: $txt-2xl;
+	}
+}
+
+h6, .h6 {
+	font-size: $txt-md;
+	@media screen and ( min-width: $lg ) {
+		font-size: $txt-lg;
+	}
+	@media screen and ( min-width: $lg ) {
+		font-size: $txt-xl;
+	}
+}
+
+a {
+	color: inherit;
+	transition: .25s all ease-in-out;
+	&:visited {
+		color: $grey-900;
+	}
+	&:hover,
+	&:focus,
+	&:active {
+		background-color: $grey-900;
+		color: white;
+	}
+	&:focus {
+		outline: thin solid $grey-900;
+	}
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}
+
+blockquote {
+	background-image: url( './icons/blockquote.svg' );
+	background-position: top right;
+	background-repeat: no-repeat;
+	background-size: 1.5rem;
+	border-left: 8px solid $grey-900;
+	font-size: 1.125em;
+	margin: $sp-md 0;
+	padding: $sp-lg;
+	
+	cite,
+	.wp-block-quote__citation {
+		display: block;
+		font-size: .9em;
+		text-align: right;
+	}
+}

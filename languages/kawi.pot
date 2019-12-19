@@ -1,0 +1,346 @@
+# Copyright (C) 2019 Vincent Dubroeucq
+# This file is distributed under the GNU General Public License v2 or later.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Kawi\n"
+"Report-Msgid-Bugs-To: https://vincentdubroeucq.com\n"
+"POT-Creation-Date: 2019-10-22 14:40+0200\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
+"Last-Translator: VINCENT DUBROEUCQ <VINCENT@VINCENTDUBROEUCQ.COM>\n"
+"Language-Team: Vincent Dubroeucq <vincent@vincentdubroeucq.com>\n"
+"X-Generator: Poedit 2.2.4\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_x:1,2c;_ex:1,2c;_n:1,2;_nx:4c,1,2;_n_noop:1,2;_nx_noop:4c,1,2;_ngettext_noop:1,2;translate_nooped_plural;esc_html__;esc_html_e;esc_html_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;number_format_i18n;date_i18n\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: js\n"
+"X-Poedit-SearchPathExcluded-1: sass\n"
+"X-Poedit-SearchPathExcluded-2: icons\n"
+"X-Poedit-SearchPathExcluded-3: node_modules\n"
+
+#: 404.php:16
+msgid "That page can&rsquo;t be found !"
+msgstr ""
+
+#: 404.php:18
+msgid "It looks like nothing was found at this location. Try typing in what you were looking for in the form below."
+msgstr ""
+
+#: comments.php:33
+#, php-format
+msgid "One comment on &ldquo;%1$s&rdquo;"
+msgstr ""
+
+#: comments.php:39
+#, php-format
+msgctxt "comments title"
+msgid "%1$s comment on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s comments on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:57
+msgid "Comments are closed."
+msgstr ""
+
+#: footer.php:19
+msgid "https://wordpress.org/"
+msgstr ""
+
+#: footer.php:22
+#, php-format
+msgid "Proudly powered by %s"
+msgstr ""
+
+#: footer.php:29
+#, php-format
+msgid "Theme: %1$s by %2$s."
+msgstr ""
+
+#: footer.php:33
+msgid "Footer navigation"
+msgstr ""
+
+#: functions.php:48
+msgid "Primary menu"
+msgstr ""
+
+#: functions.php:49
+msgid "Main menu social icons"
+msgstr ""
+
+#: functions.php:50
+msgid "Footer menu"
+msgstr ""
+
+#: functions.php:51
+msgid "Footer social icons"
+msgstr ""
+
+#: functions.php:110
+msgid "Small"
+msgstr ""
+
+#: functions.php:115
+msgid "Normal"
+msgstr ""
+
+#: functions.php:120
+msgid "Lead"
+msgstr ""
+
+#: functions.php:125
+msgid "Large"
+msgstr ""
+
+#: functions.php:130
+msgid "Very Large"
+msgstr ""
+
+#: functions.php:135
+msgid "Huge"
+msgstr ""
+
+#: functions.php:142
+msgid "Darkest grey"
+msgstr ""
+
+#: functions.php:147
+msgid "Dark grey"
+msgstr ""
+
+#: functions.php:152
+msgid "Grey"
+msgstr ""
+
+#: functions.php:157
+msgid "Light grey"
+msgstr ""
+
+#: functions.php:162
+msgid "Lightest grey"
+msgstr ""
+
+#: functions.php:179
+msgid "Full screen header image size"
+msgstr ""
+
+#: functions.php:180
+msgid "Boxed header image size"
+msgstr ""
+
+#: functions.php:181
+msgid "Featured image size on listing pages"
+msgstr ""
+
+#: functions.php:182
+msgid "Smaller featured image size"
+msgstr ""
+
+#: functions.php:197
+msgctxt "Muli font: on or off"
+msgid "on"
+msgstr ""
+
+#: functions.php:236
+msgid "Main widget area"
+msgstr ""
+
+#: functions.php:238
+msgid "Widgets added here will appear in a widget area you can place on the left, right or bottom via a setting in the customizer. If no widgets are added, a one column layout will be used for all pages and posts."
+msgstr ""
+
+#: header.php:25
+msgid "Skip to content"
+msgstr ""
+
+#: inc/customizer.php:54
+msgid "Layout"
+msgstr ""
+
+#: inc/customizer.php:73
+msgid "Header image display"
+msgstr ""
+
+#: inc/customizer.php:76
+msgid "Standard hero image"
+msgstr ""
+
+#: inc/customizer.php:77
+msgid "Full width hero image"
+msgstr ""
+
+#: inc/customizer.php:78
+msgid "Background image on hero section"
+msgstr ""
+
+#: inc/customizer.php:79
+msgid "Background image on whole header"
+msgstr ""
+
+#: inc/customizer.php:88
+msgid "Header image filter"
+msgstr ""
+
+#: inc/customizer.php:91
+msgid "No filter on header image."
+msgstr ""
+
+#: inc/customizer.php:92
+msgid "Light text on darker image."
+msgstr ""
+
+#: inc/customizer.php:93
+msgid "Dark text on lighter image."
+msgstr ""
+
+#: inc/customizer.php:102
+msgid "Blog post featured image display"
+msgstr ""
+
+#: inc/customizer.php:106
+msgid "Small thumbnail"
+msgstr ""
+
+#: inc/customizer.php:107
+msgid "Large featured image"
+msgstr ""
+
+#: inc/customizer.php:117
+msgid "Widget area position"
+msgstr ""
+
+#: inc/customizer.php:121
+msgid "Widget area on the left"
+msgstr ""
+
+#: inc/customizer.php:122
+msgid "Widget area on the right"
+msgstr ""
+
+#: inc/customizer.php:123
+msgid "Widget area below content"
+msgstr ""
+
+#: inc/template-functions.php:179
+msgid "Untitled"
+msgstr ""
+
+#: inc/template-functions.php:204
+#, php-format
+msgid "On %1$s at %2$s"
+msgstr ""
+
+#: inc/template-functions.php:212
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: inc/template-functions.php:226
+msgid "Edit"
+msgstr ""
+
+#: inc/template-tags.php:42
+msgid "Open menu"
+msgstr ""
+
+#: inc/template-tags.php:43
+msgid "Close menu"
+msgstr ""
+
+#: inc/template-tags.php:95
+msgid "Oops!"
+msgstr ""
+
+#: inc/template-tags.php:106
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: inc/template-tags.php:176
+#, php-format
+msgctxt "post date"
+msgid "<span class=\"screen-reader-text\">Posted on :</span>%s"
+msgstr ""
+
+#: inc/template-tags.php:211
+#, php-format
+msgctxt "post author"
+msgid "<span class=\"screen-reader-text\">By :</span> %s"
+msgstr ""
+
+#: inc/template-tags.php:242
+#, php-format
+msgctxt "categories"
+msgid "<span class=\"screen-reader-text\">Posted in :</span> %s"
+msgstr ""
+
+#: inc/template-tags.php:276
+#, php-format
+msgctxt "tags"
+msgid "<span class=\"screen-reader-text\">Tags :</span> %s"
+msgstr ""
+
+#: inc/template-tags.php:303
+#, php-format
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+#: inc/template-tags.php:335
+#, php-format
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr ""
+
+#: inc/template-tags.php:447
+#, php-format
+msgid "Continue reading <span class=\"screen-reader-text\">\"%s\"</span>"
+msgstr ""
+
+#: inc/template-tags.php:469
+msgid "Previous posts"
+msgstr ""
+
+#: inc/template-tags.php:470
+msgid "Next posts"
+msgstr ""
+
+#: inc/template-tags.php:494
+msgid "Older comments"
+msgstr ""
+
+#: inc/template-tags.php:495
+msgid "Newer comments"
+msgstr ""
+
+#: template-parts/content/content-none.php:15
+msgid "Nothing Found !"
+msgstr ""
+
+#: template-parts/content/content-none.php:22
+#, php-format
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content/content-none.php:34
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr ""
+
+#: template-parts/content/content-none.php:39
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr ""
+
+#: template-parts/content/content-page.php:20
+#: template-parts/content/content.php:32
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/header/navbar/navbar-default.php:15
+msgid "Primary Navigation"
+msgstr ""
+
+#: template-parts/header/navbar/navbar-default.php:19
+msgid "Menu"
+msgstr ""

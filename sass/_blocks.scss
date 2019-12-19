@@ -1,0 +1,162 @@
+/**************************
+ * Gutenberg Blocks
+ **************************/
+p.has-background {
+    padding: 1.5rem;
+}
+.has-darkest-grey-background-color {
+    background-color: #3d4852;
+}
+.has-darkest-grey-color {
+    color: #3d4852;
+}
+.has-dark-grey-background-color {
+    background-color: #58636F;
+}
+.has-dark-grey-color {
+    color: #58636F;
+}
+.has-grey-background-color {
+    background-color: #677783;
+}
+.has-grey-color {
+    color: #677783;
+}
+.has-light-grey-background-color {
+    background-color: #bac6d3;
+}
+.has-light-grey-color {
+    color: #bac6d3;
+}
+.has-lightest-grey-background-color {
+    background-color: #f1f5f8;
+}
+.has-lightest-grey-color {
+    color: #f1f5f8;
+}
+.has-small-font-size {
+    font-size: $txt-sm;
+    @media screen and ( min-width: $lg ){
+		font-size: $txt-md;
+	}
+}
+.has-lead-font-size {
+    font-size: $txt-lg;
+    @media screen and (min-width: $lg) {
+        font-size: $txt-xl;
+    }
+    @media screen and (min-width: $xxl) {
+        font-size: $txt-2xl;
+    }
+}
+.has-large-font-size {
+    font-size: $txt-xl;
+    @media screen and (min-width: $lg) {
+        font-size: $txt-2xl;
+    }
+    @media screen and (min-width: $xxl) {
+        font-size: $txt-3xl;
+    }
+}
+.has-very-large-font-size {
+    font-size: $txt-2xl;
+    @media screen and (min-width: $lg) {
+        font-size: $txt-3xl;
+    }
+    @media screen and (min-width: $xxl) {
+        font-size: $txt-4xl;
+    }
+}
+.has-huge-font-size {
+    font-size: $txt-3xl;
+    @media screen and (min-width: $lg) {
+        font-size: $txt-4xl;
+    }
+    @media screen and (min-width: $xxl) {
+        font-size: $txt-5xl;
+    }
+}
+
+.wp-block-media-text,
+.wp-block-archives-dropdown {
+    margin-bottom: $sp-md;
+}
+
+.wp-block-column {
+    margin-bottom: $sp-md;
+    padding: $sp-sm;
+    @media screen and (min-width: $lg){
+        padding: $sp-md;
+    }
+    @media screen and (min-width: 782px){
+        &:not(:first-child) {
+            margin-left: 0;
+        }
+    }
+}
+
+.wp-block-media-text {
+    display: block;
+    @media screen and (min-width: $lg){
+        display: grid;
+    }
+}
+
+.wp-block-spacer {
+    clear: both;
+}
+
+.wp-block-quote.is-large,
+.wp-block-quote.is-style-large {
+    margin: $sp-md 0;
+    padding: $sp-lg;
+    p {
+        font-size: 1.125em;
+    }
+}
+
+.wp-block-pullquote {
+    border-bottom: 8px solid;
+    border-top: 8px solid;
+    blockquote {
+        border-left: none;
+    }
+}
+
+.wp-block-separator {
+    max-width: 200px;
+    &.is-style-wide {
+        max-width: none;
+    }
+    &.is-style-dots:before {
+        letter-spacing: 1em;
+        font-size: $txt-5xl;
+    }
+}
+
+.wp-block-table.is-style-stripes {
+    border: none;
+    tr {
+        background: $grey-100;
+    }
+    tr:nth-child(even){
+        background-color: transparent; 
+    }
+}
+
+.video-player {
+	margin: $sp-md 0;
+}
+
+.wp-block-embed.is-type-video .wp-block-embed__wrapper {
+	position: relative;
+	padding-bottom: 56.25%;
+}
+
+.wp-block-embed.is-type-video .wp-block-embed__wrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}

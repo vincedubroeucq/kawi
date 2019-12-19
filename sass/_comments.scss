@@ -1,0 +1,75 @@
+/**************************
+ * Comments area 
+ **************************/
+.comments-area {
+    background: white;
+    border-top: 8px solid #3d4852;
+}
+
+.comment-reply-title, 
+.comments-title {
+    margin-top: 0;
+}
+
+.comment-notes {
+    color: $grey-500;
+    font-size: $txt-sm;
+}
+
+.comment-form-comment label,
+.comment-form-author label,
+.comment-form-url label,
+.comment-form-email label {
+    display: block;
+}
+
+.comment-list {
+    list-style: none;
+    margin-bottom: $sp-xl;
+    padding: 0;
+}
+
+.children {
+    list-style: none;
+}
+
+.comment-body {
+    border-left: 8px solid #3d4852;
+    margin-bottom: $sp-md;
+}
+
+.comment-author { 
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: $sp-sm;
+ 
+    .avatar {
+        border-radius: 50%;
+        max-width: 64px;
+        margin-right: $sp-sm;
+    }
+}
+
+.bypostauthor .avatar {
+    border: 4px solid $grey-900;
+    max-width: none;
+}
+
+.comment-author-name {
+    display: block;
+    margin: 0 0 .25em;
+}
+
+.comment-date {
+    color: $grey-500;
+    display: block;
+    font-size: $txt-sm;
+}
+
+.comment-footer {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

@@ -1,0 +1,63 @@
+/*!
+Theme Name: Kawi
+Theme URI: https://wordpress.org/themes/kawi/
+Author: Vincent Dubroeucq
+Author URI: https://vincentdubroeucq.com
+Description: A clean and simple theme for any blog.
+Version: 1.0.1
+Requires at least: WordPress 4.7
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: kawi
+Tags: blog, custom-background, one-column, two-columns, left-sidebar, right-sidebar, custom-logo, custom-menu, featured-images, featured-image-header, footer-widgets, sticky-post, theme-options, threaded-comments, translation-ready, accessibility-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Kawi is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+
+Genericons Neue (https://genericons.com/) are used in the theme.
+Genericons Neue are distributed under the terms of the GNU GPL v2 or later.
+
+Social Logos (https://github.com/Automattic/social-logos) are used in the theme.
+Social Logos are distributed under the terms of the GNU GPL v2 or later.
+
+Screenshot image from StockSnap.io (https: //stocksnap.io/photo/AAJD6NGTZE) Licenced CC0 (https://creativecommons.org/publicdomain/zero/1.0/)
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Typography
+# Elements
+# Forms
+# Media
+# Header
+# Content
+# Blocks
+# Pagination
+# Comments
+# Footer
+# Widgets
+# Helpers
+--------------------------------------------------------------*/
+
+@import "variables";
+@import "normalize";
+@import "typography";
+@import "elements";
+@import "forms";
+@import "media";
+@import "header";
+@import "content";
+@import "blocks";
+@import "pagination";
+@import "comments";
+@import "footer";
+@import "widgets";
+@import "helpers";

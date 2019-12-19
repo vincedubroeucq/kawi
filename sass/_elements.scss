@@ -1,0 +1,90 @@
+/**************************
+ * Basic HTML elements
+ **************************/
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	background: white;
+	position: initial;
+}
+
+hr {
+	color: $grey-400;
+	margin: $sp-md 0;
+}
+
+ul, ol {
+	margin: $sp-md 0;
+	padding-left: $sp-lg;
+}
+
+li > ul,
+li > ol {
+	margin: 0;
+}
+
+li {
+	margin-top: $sp-3xs;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 $sp-md $sp-md;
+}
+
+img {
+	height: auto; 
+	max-width: 100%;
+}
+
+svg {
+	fill: currentColor;
+}
+
+figure, table {
+	margin: $sp-lg 0;
+}
+
+table {
+	border-collapse: collapse;
+	border: 1px solid $grey-700;
+    width: 100%;
+}
+
+thead, tfoot, th {
+	background-color: $grey-900;
+	color: white;
+	text-align: left;
+
+	a {
+		color: white;
+		&:visited {
+			color: white;
+		}
+		&:hover, 
+		&:focus {
+			color: $grey-900;
+			background-color: white;
+		}
+	}
+}
+
+th, td {
+	border: 1px solid $grey-700;
+	padding: $sp-2xs;
+}
+
+.table-wrapper {
+	overflow: auto;
+}
