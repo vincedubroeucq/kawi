@@ -60,7 +60,9 @@
 }
 
 .site-title {
-    font-size: $txt-xl;
+    // font-size: $txt-xl;
+    font-size: $txt-sm;
+    font-weight: bold;
     margin: 0;
     a {
         text-decoration: none;
@@ -73,8 +75,8 @@
 
 .site-description {
     color: $grey-500;
-    font-size: $txt-sm;
-    margin: $sp-4xs 0 0;
+    font-size: $txt-xs;
+    margin: $sp-3xs 0 0;
 }
 
 .sidebar-menu-area {
@@ -131,7 +133,9 @@
         border-bottom: 4px solid transparent;
         border-top: 4px solid transparent;
         display: inline-block;
+        font-size: $txt-sm;
         text-decoration: none;
+        text-transform: uppercase;
     }
 
     a:hover,
@@ -285,6 +289,32 @@
     }
 }
 
+.topbar-nav {
+    background-color: $grey-900;
+}
+
+.topbar-menu {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: flex-end;
+    line-height: 1;
+
+    .menu-item {
+        margin-left: $sp-sm;
+    }
+
+    a {
+        color: white;
+        font-size: $sp-xs;
+        text-decoration: none;
+        text-transform: uppercase;
+        &:hover,&:focus {
+            text-decoration: underline;
+        }
+    }
+}
+
 /**************************
  * Hero section
  **************************/
@@ -319,6 +349,7 @@
 
 .main-meta {
     color: $grey-500;
+    font-size: $txt-sm;
     margin: $sp-sm 0 0;
 }
 

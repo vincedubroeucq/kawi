@@ -15,13 +15,13 @@ function kawi_site_branding() {
 			<?php the_custom_logo(); ?>
 			<div class="site-details">
 				<?php if ( is_front_page() ) : ?>
-					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+					<h1 class="site-title caps"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 				<?php else : ?>
-					<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+					<p class="site-title caps"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 				<?php endif;
 				$kawi_description = get_bloginfo( 'description', 'display' );
 				if ( $kawi_description || is_customize_preview() ) : ?>
-					<p class="site-description"><?php echo esc_html( $kawi_description ); /* WPCS: xss ok. */ ?></p>
+					<p class="site-description caps"><?php echo esc_html( $kawi_description ); /* WPCS: xss ok. */ ?></p>
 				<?php endif; ?>
 			</div>
 		</div><!-- .site-branding -->
@@ -113,8 +113,11 @@ function kawi_get_hero_data(){
 	}
 
 	if( is_front_page() ){
-		$data['title'] = esc_html( get_bloginfo( 'name' ) );
-		$data['meta']  = esc_html( get_bloginfo( 'description', 'display' ) );
+		$setting = get_theme_mod( 'kawi_homepage_title' );
+		if ( is_home() || 'site-title' === $setting ) {
+			$data['title'] = esc_html( get_bloginfo( 'name' ) ) ;
+			$data['meta']  = esc_html( get_bloginfo( 'description', 'display' ) );
+		}
 	}
 
 	return apply_filters( 'kawi_hero_data', $data );
@@ -276,7 +279,7 @@ function kawi_tags( $echo = true ) {
 			_x( '<span class="screen-reader-text">Tags :</span> %s', 'tags', 'kawi' ),
 			$tags
 		);
-		$html = '<span class="tags">' . kawi_ui_icon( 'tags', false ) . '<span class="tag-list">' . $tag_list . '</span></span>'; // WPCS: XSS OK.
+		$html = '<span class="tags caps">' . kawi_ui_icon( 'tags', false ) . '<span class="tag-list">' . $tag_list . '</span></span>'; // WPCS: XSS OK.
 	}
 
 	if( $echo ) {
@@ -294,7 +297,7 @@ if ( ! function_exists( 'kawi_comment_link' ) ) :
  */
 function kawi_comment_link() {
 	if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) && get_theme_mod( 'kawi_meta_show_comment_link', true ) ) {
-		echo '<span class="comment-link">';
+		echo '<span class="comment-link caps">';
 		kawi_ui_icon( 'comment' );
 		comments_popup_link(
 			sprintf(
@@ -341,7 +344,7 @@ function kawi_post_footer() {
 			),
 			get_the_title()
 		),
-		'<span class="edit-link">' . kawi_ui_icon( 'edit', false ),
+		'<span class="edit-link caps">' . kawi_ui_icon( 'edit', false ),
 		'</span>'
 	);
 }
@@ -416,7 +419,7 @@ function kawi_post_content() {
 
 		default:
 			the_content( kawi_read_more_text() );
-			if( 'excerpt' === get_option( 'jetpack_content_blog_display' ) ){
+			if( is_home() && 'excerpt' === get_option( 'jetpack_content_blog_display' ) ){
 				kawi_read_more_link();
 			}
 			break;

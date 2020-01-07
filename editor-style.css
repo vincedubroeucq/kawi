@@ -1,6 +1,6 @@
-/*!
- *   Editor styles
- **/
+/*******************!
+ *  Editor styles
+ *******************/
 /**************************
  * Typography
  **************************/
@@ -256,6 +256,12 @@ svg {
 
 figure, table {
   margin: 2rem 0;
+}
+
+figcaption {
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
 }
 
 table {
@@ -540,6 +546,10 @@ body {
   max-width: none;
 }
 
+.block-editor-block-list__block[data-type="core/paragraph"] p {
+  line-height: 1.6;
+}
+
 .block-library-list ol,
 .block-library-list ul {
   margin-left: 0;
@@ -613,6 +623,75 @@ body {
 }
 .wp-block-table.is-style-stripes tr:nth-child(even) {
   background-color: transparent;
+}
+
+p.has-background {
+  padding: 1.5rem !important;
+}
+
+.has-small-font-size {
+  font-size: 0.875rem !important;
+}
+@media screen and (min-width: 992px) {
+  .has-small-font-size {
+    font-size: 1rem !important;
+  }
+}
+
+.has-lead-font-size {
+  font-size: 1.125rem !important;
+}
+@media screen and (min-width: 992px) {
+  .has-lead-font-size {
+    font-size: 1.25rem !important;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .has-lead-font-size {
+    font-size: 1.5rem !important;
+  }
+}
+
+.has-large-font-size {
+  font-size: 1.25rem !important;
+}
+@media screen and (min-width: 992px) {
+  .has-large-font-size {
+    font-size: 1.5rem !important;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .has-large-font-size {
+    font-size: 1.75rem !important;
+  }
+}
+
+.has-very-large-font-size {
+  font-size: 1.5rem !important;
+}
+@media screen and (min-width: 992px) {
+  .has-very-large-font-size {
+    font-size: 1.75rem !important;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .has-very-large-font-size {
+    font-size: 2rem !important;
+  }
+}
+
+.has-huge-font-size {
+  font-size: 1.75rem !important;
+}
+@media screen and (min-width: 992px) {
+  .has-huge-font-size {
+    font-size: 2rem !important;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .has-huge-font-size {
+    font-size: 2.75rem !important;
+  }
 }
 
 /*# sourceMappingURL=editor-style.css.map */

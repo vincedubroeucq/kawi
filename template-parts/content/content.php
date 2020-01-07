@@ -16,7 +16,7 @@
 				<?php kawi_post_thumbnail(); ?>
 				<div class="post-details">
 					<?php if ( 'post' === get_post_type() && ( '' !== get_theme_mod( 'kawi_post_meta_display', 'date' ) ) ) : ?>
-						<div class="post-meta">
+						<div class="post-meta caps">
 							<?php kawi_post_meta(); ?>
 						</div><!-- .post-meta -->
 					<?php endif; ?>

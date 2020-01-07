@@ -3,7 +3,7 @@ Contributors: vincentdubroeucq
 Requires PHP: 5.5
 Requires at least: 4.7
 Tested up to: 5.2
-Stable tag: 1.0.0
+Stable tag: 1.0.2
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Tags: blog, custom-background, one-column, two-columns, left-sidebar, right-sidebar, custom-logo, custom-menu, featured-images, featured-image-header, flexible-header, footer-widgets, full-width-template, sticky-post, theme_options, threaded-comments, translation-ready, accessibility-ready
@@ -23,11 +23,12 @@ The theme is very simple to use and supports WordPress' core functionalities:
  - featured images (post thumbnails)
  - A single widget area you can place on the left, right, or at the bottom, just before the footer.
 
-There are four menu locations
+There are five menu locations
  - The main menu slot features your main menu, obviously. On mobile, the menu is displayed in a sliding sidebar.
  - The main social menu allows you to add social link icons along your main menu. Just link to your profile on your favorite platforms.
  - There's a footer menu area.
  - And another social menu area in the footer.
+ - And you also have a top bar menu for account link, for example. Note that it doesn't support nested menus.
 
 Supported social icons (link text given): 
  - facebook
@@ -66,6 +67,12 @@ The theme offers simple support for the built-in blocks of the new WordPress edi
 Kawi includes support for Infinite Scroll and basic content options in Jetpack.
 
 == Changelog ==
+
+= 1.0.2 - January 2020 =
+* Fixed editor font sizes
+* Typography enhancement
+* Added a top bar menu
+* Added a setting for front page title display
 
 = 1.0.1 - October 2019 =
 * Fixed minor wording and CSS issues

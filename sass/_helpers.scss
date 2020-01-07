@@ -39,7 +39,11 @@
     color: $grey-700;
     font-size: $txt-sm;
     margin: 0;
-    text-transform: uppercase;
+	text-transform: uppercase;
+}
+
+.caps {
+	text-transform: uppercase;
 }
 
 .pt-xl {
@@ -72,4 +76,8 @@
 
 .mb-2xl {
     margin-bottom: $sp-2xl !important;
+}
+
+.inline-block {
+	display: inline-block;
 }

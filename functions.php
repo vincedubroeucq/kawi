@@ -46,6 +46,7 @@ if ( ! function_exists( 'kawi_setup' ) ) :
 		// This theme uses wp_nav_menu() in four locations.
 		register_nav_menus( array(
 			'menu-1'      => esc_html__( 'Primary menu', 'kawi' ),
+			'topbar-menu' => esc_html__( 'Top bar menu', 'kawi' ),
 			'social-menu' => esc_html__( 'Main menu social icons', 'kawi' ),
 			'footer-menu' => esc_html__( 'Footer menu', 'kawi' ),
 			'footer-social-menu' => esc_html__( 'Footer social icons', 'kawi' ),
@@ -100,8 +101,9 @@ if ( ! function_exists( 'kawi_setup' ) ) :
 		add_image_size( 'kawi-featured-small', 576, 288, array( 'center', 'top' ) );
 
 		// Add styles on the editor.
+		$editor_stylesheet_name = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? 'editor-style.css' : 'editor-style.min.css';	
 		add_theme_support( 'editor-styles' );
-		add_editor_style( array( 'editor-style.min.css', kawi_slug_fonts_url() ) );
+		add_editor_style( array( $editor_stylesheet_name, kawi_slug_fonts_url() ) );
 
 		// Gutenberg supports
 		add_theme_support( 'align-wide' );
@@ -274,6 +276,13 @@ require get_template_directory() . '/inc/template-functions.php';
  * Customizer additions.
  */
 require get_template_directory() . '/inc/customizer.php';
+
+/**
+ * Notices.
+ */
+if( is_admin() ){
+	require get_template_directory() . '/inc/notices.php';
+}
 
 /**
  * Load Jetpack compatibility file.

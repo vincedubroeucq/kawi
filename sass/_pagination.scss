@@ -11,9 +11,11 @@
     clear: both;
     display: flex;
     flex-wrap: wrap;
+    font-size: $txt-sm;
     justify-content: center;
     margin-bottom: $sp-xl;
     padding: $sp-sm 0;
+    text-transform: uppercase;
     @media screen and (min-width: $lg){
         padding: $sp-md 0;
     }

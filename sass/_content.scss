@@ -83,6 +83,10 @@
     }
 }
 
+.single .hentry {
+	margin-bottom: 0;
+}
+
 .post-thumbnail {
     display: block;
     margin: #{-$sp-sm} #{-$sp-sm} #{$sp-sm} #{-$sp-sm};
@@ -108,7 +112,7 @@
 
 .post-meta {
     color: $grey-500;
-    font-size: $txt-sm;
+    font-size: $txt-xs;
     margin: 0;
     a {
         color: inherit;
@@ -200,14 +204,16 @@
 
 .more-link {
     display: inline-block;
+    font-size: $txt-sm;
     margin-bottom: $sp-md;
+	text-transform: uppercase;
 }
 
 .post-footer {
     border-top: 1px solid $grey-200;
     clear: both;
     color: $grey-500;
-    font-size: $txt-sm;
+    font-size: $txt-xs;
     padding:  $sp-sm 0; 
     @media screen and ( min-width: $sm ) {
         align-items: center;

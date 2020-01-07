@@ -21,17 +21,15 @@ function kawi_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
 
-	
-	// Register custom sections and settings
+	// Register custom sections, settings and partials
 	$sections = kawi_get_customizer_sections();
 	array_walk( $sections , function( $args, $id, $wp_customize ){
 		$wp_customize->add_section( $id, $args );
 	}, $wp_customize );
 
 	$settings = kawi_get_customizer_settings();
-	array_walk( $settings, 'kawi_register_customizer_setting', $wp_customize );
+	array_walk( $settings, 'kawi_register_customizer_setting', $wp_customize );	
 }
-
 
 add_action( 'customize_preview_init', 'kawi_customize_preview_js' );
 /**
@@ -109,18 +107,32 @@ function kawi_get_customizer_settings() {
 			]
 		],
 		'kawi_sidebar_position' => [
-			'default' => 'sidebar-right',
+			'default'   => 'sidebar-right',
 			'transport' => 'postMessage',
 			'sanitize_callback' => 'kawi_validate_choice',
-			'control' => [
-				'type' => 'radio',
-				'label' => __( 'Widget area position', 'kawi' ),
+			'control'   => [
+				'type'    => 'radio',
+				'label'   => __( 'Widget area position', 'kawi' ),
 				'section' => 'layout',
 				'active_callback' => function(){return ! is_page() && ! is_404() && is_active_sidebar( 'sidebar-1' );},
 				'choices' => [
 					'sidebar-left'   => __( 'Widget area on the left', 'kawi' ),
 					'sidebar-right'  => __( 'Widget area on the right', 'kawi' ),
 					'sidebar-bottom' => __( 'Widget area below content', 'kawi' ),
+				],
+			]
+		],
+		'kawi_homepage_title' => [
+			'default'   => 'site-title',
+			'sanitize_callback' => 'kawi_validate_choice',
+			'control'   => [
+				'type'    => 'radio',
+				'label'   => __( 'Title to display on front page', 'kawi' ),
+				'section' => 'static_front_page',
+				'active_callback' => function(){ return is_front_page() && !is_home();},
+				'choices' => [
+					'site-title'   => __( 'Display site title', 'kawi' ),
+					'page-title'   => __( 'Display page title', 'kawi' ),
 				],
 			]
 		],

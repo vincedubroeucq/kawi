@@ -1,9 +1,10 @@
 /*!
 Theme Name: Kawi
+Theme URI: https://wordpress.org/themes/kawi/
 Author: Vincent Dubroeucq
 Author URI: https://vincentdubroeucq.com
 Description: A clean and simple theme for any blog.
-Version: 1.0.0
+Version: 1.0.2
 Requires at least: WordPress 4.7
 License: GNU General Public License v2 or later
 License URI: LICENSE
@@ -633,6 +634,12 @@ figure, table {
   margin: 2rem 0;
 }
 
+figcaption {
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+}
+
 table {
   border-collapse: collapse;
   border: 1px solid #58636F;
@@ -1097,7 +1104,8 @@ object {
 }
 
 .site-title {
-  font-size: 1.25rem;
+  font-size: 0.875rem;
+  font-weight: bold;
   margin: 0;
 }
 .site-title a {
@@ -1109,8 +1117,8 @@ object {
 
 .site-description {
   color: #677783;
-  font-size: 0.875rem;
-  margin: 0.125rem 0 0;
+  font-size: 0.75rem;
+  margin: 0.25rem 0 0;
 }
 
 .sidebar-menu-area {
@@ -1176,7 +1184,9 @@ object {
   border-bottom: 4px solid transparent;
   border-top: 4px solid transparent;
   display: inline-block;
+  font-size: 0.875rem;
   text-decoration: none;
+  text-transform: uppercase;
 }
 .main-navigation a:hover,
 .main-navigation a:focus,
@@ -1343,6 +1353,30 @@ object {
   }
 }
 
+.topbar-nav {
+  background-color: #3d4852;
+}
+
+.topbar-menu {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  line-height: 1;
+}
+.topbar-menu .menu-item {
+  margin-left: 1rem;
+}
+.topbar-menu a {
+  color: white;
+  font-size: 0.75rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.topbar-menu a:hover, .topbar-menu a:focus {
+  text-decoration: underline;
+}
+
 /**************************
  * Hero section
  **************************/
@@ -1377,6 +1411,7 @@ object {
 
 .main-meta {
   color: #677783;
+  font-size: 0.875rem;
   margin: 1rem 0 0;
 }
 
@@ -1555,6 +1590,10 @@ object {
   }
 }
 
+.single .hentry {
+  margin-bottom: 0;
+}
+
 .post-thumbnail {
   display: block;
   margin: -1rem -1rem 1rem -1rem;
@@ -1584,7 +1623,7 @@ object {
 
 .post-meta {
   color: #677783;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   margin: 0;
 }
 .post-meta a {
@@ -1677,14 +1716,16 @@ object {
 
 .more-link {
   display: inline-block;
+  font-size: 0.875rem;
   margin-bottom: 1.5rem;
+  text-transform: uppercase;
 }
 
 .post-footer {
   border-top: 1px solid #dae1e7;
   clear: both;
   color: #677783;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   padding: 1rem 0;
 }
 @media screen and (min-width: 576px) {
@@ -1957,9 +1998,11 @@ p.has-background {
   clear: both;
   display: flex;
   flex-wrap: wrap;
+  font-size: 0.875rem;
   justify-content: center;
   margin-bottom: 3rem;
   padding: 1rem 0;
+  text-transform: uppercase;
 }
 @media screen and (min-width: 992px) {
   .nav-links,
@@ -2118,6 +2161,7 @@ p.has-background {
 .site-footer {
   border-top: 1px solid #dae1e7;
   color: #677783;
+  font-size: 0.875rem;
 }
 
 .footer-wrapper {
@@ -2140,6 +2184,7 @@ p.has-background {
 
 .footer-menu-section a {
   border-top: none;
+  font-size: 0.75rem;
 }
 @media screen and (min-width: 768px) {
   .footer-menu-section {
@@ -2257,6 +2302,10 @@ p.has-background {
   text-transform: uppercase;
 }
 
+.caps {
+  text-transform: uppercase;
+}
+
 .pt-xl {
   padding-top: 3rem !important;
 }
@@ -2287,6 +2336,10 @@ p.has-background {
 
 .mb-2xl {
   margin-bottom: 4rem !important;
+}
+
+.inline-block {
+  display: inline-block;
 }
 
 /*# sourceMappingURL=style.css.map */

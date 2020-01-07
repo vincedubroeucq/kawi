@@ -56,6 +56,12 @@ figure, table {
 	margin: $sp-lg 0;
 }
 
+figcaption {
+	text-align: center;
+	font-style: italic;
+	font-size: smaller;
+}
+
 table {
 	border-collapse: collapse;
 	border: 1px solid $grey-700;

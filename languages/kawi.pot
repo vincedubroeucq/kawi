@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kawi\n"
 "Report-Msgid-Bugs-To: https://vincentdubroeucq.com\n"
-"POT-Creation-Date: 2019-10-22 14:40+0200\n"
+"POT-Creation-Date: 2020-01-07 15:43+0100\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -69,88 +69,92 @@ msgstr ""
 msgid "Primary menu"
 msgstr ""
 
-#: functions.php:49
-msgid "Main menu social icons"
+#: functions.php:49 header.php:28
+msgid "Top bar menu"
 msgstr ""
 
 #: functions.php:50
-msgid "Footer menu"
+msgid "Main menu social icons"
 msgstr ""
 
 #: functions.php:51
+msgid "Footer menu"
+msgstr ""
+
+#: functions.php:52
 msgid "Footer social icons"
 msgstr ""
 
-#: functions.php:110
+#: functions.php:112
 msgid "Small"
 msgstr ""
 
-#: functions.php:115
+#: functions.php:117
 msgid "Normal"
 msgstr ""
 
-#: functions.php:120
+#: functions.php:122
 msgid "Lead"
 msgstr ""
 
-#: functions.php:125
+#: functions.php:127
 msgid "Large"
 msgstr ""
 
-#: functions.php:130
+#: functions.php:132
 msgid "Very Large"
 msgstr ""
 
-#: functions.php:135
+#: functions.php:137
 msgid "Huge"
 msgstr ""
 
-#: functions.php:142
+#: functions.php:144
 msgid "Darkest grey"
 msgstr ""
 
-#: functions.php:147
+#: functions.php:149
 msgid "Dark grey"
 msgstr ""
 
-#: functions.php:152
+#: functions.php:154
 msgid "Grey"
 msgstr ""
 
-#: functions.php:157
+#: functions.php:159
 msgid "Light grey"
 msgstr ""
 
-#: functions.php:162
+#: functions.php:164
 msgid "Lightest grey"
 msgstr ""
 
-#: functions.php:179
+#: functions.php:181
 msgid "Full screen header image size"
 msgstr ""
 
-#: functions.php:180
+#: functions.php:182
 msgid "Boxed header image size"
 msgstr ""
 
-#: functions.php:181
+#: functions.php:183
 msgid "Featured image size on listing pages"
 msgstr ""
 
-#: functions.php:182
+#: functions.php:184
 msgid "Smaller featured image size"
 msgstr ""
 
-#: functions.php:197
+#: functions.php:199
 msgctxt "Muli font: on or off"
 msgid "on"
 msgstr ""
 
-#: functions.php:236
+#: functions.php:238
 msgid "Main widget area"
 msgstr ""
 
-#: functions.php:238
+#: functions.php:240
 msgid "Widgets added here will appear in a widget area you can place on the left, right or bottom via a setting in the customizer. If no widgets are added, a one column layout will be used for all pages and posts."
 msgstr ""
 
@@ -158,72 +162,89 @@ msgstr ""
 msgid "Skip to content"
 msgstr ""
 
-#: inc/customizer.php:54
+#: inc/customizer.php:52
 msgid "Layout"
 msgstr ""
 
-#: inc/customizer.php:73
+#: inc/customizer.php:71
 msgid "Header image display"
 msgstr ""
 
-#: inc/customizer.php:76
+#: inc/customizer.php:74
 msgid "Standard hero image"
 msgstr ""
 
-#: inc/customizer.php:77
+#: inc/customizer.php:75
 msgid "Full width hero image"
 msgstr ""
 
-#: inc/customizer.php:78
+#: inc/customizer.php:76
 msgid "Background image on hero section"
 msgstr ""
 
-#: inc/customizer.php:79
+#: inc/customizer.php:77
 msgid "Background image on whole header"
 msgstr ""
 
-#: inc/customizer.php:88
+#: inc/customizer.php:86
 msgid "Header image filter"
 msgstr ""
 
-#: inc/customizer.php:91
+#: inc/customizer.php:89
 msgid "No filter on header image."
 msgstr ""
 
-#: inc/customizer.php:92
+#: inc/customizer.php:90
 msgid "Light text on darker image."
 msgstr ""
 
-#: inc/customizer.php:93
+#: inc/customizer.php:91
 msgid "Dark text on lighter image."
 msgstr ""
 
-#: inc/customizer.php:102
+#: inc/customizer.php:100
 msgid "Blog post featured image display"
 msgstr ""
 
-#: inc/customizer.php:106
+#: inc/customizer.php:104
 msgid "Small thumbnail"
 msgstr ""
 
-#: inc/customizer.php:107
+#: inc/customizer.php:105
 msgid "Large featured image"
 msgstr ""
 
-#: inc/customizer.php:117
+#: inc/customizer.php:115
 msgid "Widget area position"
 msgstr ""
 
-#: inc/customizer.php:121
+#: inc/customizer.php:119
 msgid "Widget area on the left"
 msgstr ""
 
-#: inc/customizer.php:122
+#: inc/customizer.php:120
 msgid "Widget area on the right"
 msgstr ""
 
-#: inc/customizer.php:123
+#: inc/customizer.php:121
 msgid "Widget area below content"
+msgstr ""
+
+#: inc/customizer.php:130
+msgid "Title to display on front page"
+msgstr ""
+
+#: inc/customizer.php:134
+msgid "Display site title"
+msgstr ""
+
+#: inc/customizer.php:135
+msgid "Display page title"
+msgstr ""
+
+#: inc/notices.php:19
+#, php-format
+msgid "If you like my Kawi theme, do you mind <a href=\"%s\" target=\"_blank\" rel=\"noreferrer\">leaving a review</a> ? That will help me a lot ! Thanks in advance !"
 msgstr ""
 
 #: inc/template-functions.php:179
@@ -260,58 +281,58 @@ msgstr ""
 msgid "Search Results for: %s"
 msgstr ""
 
-#: inc/template-tags.php:176
+#: inc/template-tags.php:179
 #, php-format
 msgctxt "post date"
 msgid "<span class=\"screen-reader-text\">Posted on :</span>%s"
 msgstr ""
 
-#: inc/template-tags.php:211
+#: inc/template-tags.php:214
 #, php-format
 msgctxt "post author"
 msgid "<span class=\"screen-reader-text\">By :</span> %s"
 msgstr ""
 
-#: inc/template-tags.php:242
+#: inc/template-tags.php:245
 #, php-format
 msgctxt "categories"
 msgid "<span class=\"screen-reader-text\">Posted in :</span> %s"
 msgstr ""
 
-#: inc/template-tags.php:276
+#: inc/template-tags.php:279
 #, php-format
 msgctxt "tags"
 msgid "<span class=\"screen-reader-text\">Tags :</span> %s"
 msgstr ""
 
-#: inc/template-tags.php:303
+#: inc/template-tags.php:306
 #, php-format
 msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
 msgstr ""
 
-#: inc/template-tags.php:335
+#: inc/template-tags.php:338
 #, php-format
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr ""
 
-#: inc/template-tags.php:447
+#: inc/template-tags.php:450
 #, php-format
 msgid "Continue reading <span class=\"screen-reader-text\">\"%s\"</span>"
 msgstr ""
 
-#: inc/template-tags.php:469
+#: inc/template-tags.php:472
 msgid "Previous posts"
 msgstr ""
 
-#: inc/template-tags.php:470
+#: inc/template-tags.php:473
 msgid "Next posts"
 msgstr ""
 
-#: inc/template-tags.php:494
+#: inc/template-tags.php:497
 msgid "Older comments"
 msgstr ""
 
-#: inc/template-tags.php:495
+#: inc/template-tags.php:498
 msgid "Newer comments"
 msgstr ""
 

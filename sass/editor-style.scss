@@ -1,11 +1,12 @@
-/*!
- *   Editor styles
- **/
+/*******************!
+ *  Editor styles
+ *******************/
 @import "variables";
 @import "typography";
 @import "elements";
 // @import "forms";
 @import "media";
+// @import "blocks";
 
 body {
     overflow-x: hidden;
@@ -21,6 +22,10 @@ body {
 
 .wp-block[data-align="full"] {
     max-width: none;
+}
+
+.block-editor-block-list__block[data-type="core/paragraph"] p {
+    line-height: 1.6;
 }
 
 .block-library-list ol,
@@ -95,5 +100,55 @@ body {
     }
     tr:nth-child(even){
         background-color: transparent; 
+    }
+}
+
+p.has-background {
+    padding: 1.5rem !important;
+}
+
+.has-small-font-size {
+    font-size: $txt-sm !important;
+    @media screen and ( min-width: $lg ){
+		font-size: $txt-md !important;
+	}
+}
+
+.has-lead-font-size {
+    font-size: $txt-lg !important;
+    @media screen and (min-width: $lg) {
+        font-size: $txt-xl !important;
+    }
+    @media screen and (min-width: $xxl) {
+        font-size: $txt-2xl !important;
+    }
+}
+
+.has-large-font-size {
+    font-size: $txt-xl !important;
+    @media screen and (min-width: $lg) {
+        font-size: $txt-2xl !important;
+    }
+    @media screen and (min-width: $xxl) {
+        font-size: $txt-3xl !important;
+    }
+}
+.has-very-large-font-size {
+    font-size: $txt-2xl !important;
+    @media screen and (min-width: $lg) {
+        font-size: $txt-3xl !important;
+    }
+    @media screen and (min-width: $xxl) {
+        font-size: $txt-4xl !important;
+    }
+}
+
+.has-huge-font-size {
+    font-size: $txt-3xl !important;
+    @media screen and (min-width: $lg) {
+        font-size: $txt-4xl !important;
+    }
+    @media screen and (min-width: $xxl) {
+        font-size: $txt-5xl !important;
     }
 }
