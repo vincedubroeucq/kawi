@@ -227,7 +227,8 @@
 }
 
 .sub-menu,
-.children {
+.menu-item-has-childen .children,
+.page_item_has_children .children {
     font-size: $txt-sm;
     .menu-item,
     .page_item {

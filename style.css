@@ -4,7 +4,7 @@ Theme URI: https://wordpress.org/themes/kawi/
 Author: Vincent Dubroeucq
 Author URI: https://vincentdubroeucq.com
 Description: A clean and simple theme for any blog.
-Version: 1.0.2
+Version: 1.1.0
 Requires at least: WordPress 4.7
 License: GNU General Public License v2 or later
 License URI: LICENSE
@@ -1285,18 +1285,22 @@ object {
 }
 
 .sub-menu,
-.children {
+.menu-item-has-childen .children,
+.page_item_has_children .children {
   font-size: 0.875rem;
 }
 .sub-menu .menu-item,
 .sub-menu .page_item,
-.children .menu-item,
-.children .page_item {
+.menu-item-has-childen .children .menu-item,
+.menu-item-has-childen .children .page_item,
+.page_item_has_children .children .menu-item,
+.page_item_has_children .children .page_item {
   margin-top: 0.25rem;
 }
 @media screen and (min-width: 992px) {
   .sub-menu,
-.children {
+.menu-item-has-childen .children,
+.page_item_has_children .children {
     background-color: white;
     height: max-content;
     left: 0;
@@ -1309,7 +1313,8 @@ object {
     z-index: -10;
   }
   .sub-menu ul,
-.children ul {
+.menu-item-has-childen .children ul,
+.page_item_has_children .children ul {
     position: inherit;
     padding: 0;
   }

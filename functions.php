@@ -252,7 +252,7 @@ add_action( 'wp_enqueue_scripts', 'kawi_scripts' );
  */
 function kawi_scripts() {
 	$stylesheet_uri = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? get_stylesheet_uri() : get_theme_file_uri( 'style.min.css' );	
-	$script_name    = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '/js/main.js' : '/js/main.min.js';	
+	$script_name    = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '/js/src/main.js' : '/js/main.min.js';	
 	wp_enqueue_style( 'kawi-fonts', kawi_slug_fonts_url(), array(), null );
 	wp_enqueue_style( 'kawi-styles', $stylesheet_uri, array(), null );
 	wp_enqueue_script( 'kawi-scripts', get_template_directory_uri() . $script_name, array(), null, false );

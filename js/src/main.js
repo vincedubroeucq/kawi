@@ -1,4 +1,4 @@
-Document.addEventListener('DOMContentLoaded', (e) => {
+document.addEventListener('DOMContentLoaded', (e) => {
 
     /**
      * Skip link focus fix

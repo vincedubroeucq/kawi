@@ -49,6 +49,10 @@ function kawi_body_classes( $classes ) {
 		$classes[] = sanitize_html_class( get_theme_mod( 'kawi_header_image_display', 'hero-image' ) );
 	}
 
+	if( has_nav_menu( 'topbar-menu' ) ){
+		$classes[] = 'has-topbar';
+	}
+
 	return $classes;
 }
 
