@@ -62,6 +62,8 @@ if ( ! function_exists( 'kawi_setup' ) ) :
 			'comment-list',
 			'gallery',
 			'caption',
+			'script',
+			'style',
 		) );
 
 		// Add support for the custom header feature.
