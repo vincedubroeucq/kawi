@@ -169,7 +169,6 @@ function kawi_get_ui_icons(){
 
 }
 
-
 add_filter( 'the_title', 'kawi_default_post_title', 10, 2 );
 /**
  * Filters the post title to provide a default one in case there's no title to display.
@@ -178,7 +177,11 @@ add_filter( 'the_title', 'kawi_default_post_title', 10, 2 );
  * @param   int     $id     Post ID
  * @return  string  $title   Default post title
  **/
-function kawi_default_post_title( $title, $id ){
+function kawi_default_post_title( $title, $id = '' ){
+
+    if ( empty( $id ) ){
+        $id = get_the_ID();
+    }
 	if ( empty( $title ) ){
 		$title = '<em>' . __( 'Untitled', 'kawi' ). '</em>';
 	}
