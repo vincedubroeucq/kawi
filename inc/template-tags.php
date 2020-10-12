@@ -15,7 +15,7 @@ function kawi_site_branding() {
 			<?php the_custom_logo(); ?>
 			<div class="site-details">
 				<?php if ( is_front_page() ) : ?>
-					<h1 class="site-title caps"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+					<h1 class="site-title caps"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" aria-current="page"><?php bloginfo( 'name' ); ?></a></h1>
 				<?php else : ?>
 					<p class="site-title caps"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 				<?php endif;
