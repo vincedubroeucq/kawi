@@ -69,5 +69,3 @@ add_filter( 'infinite_scroll_has_footer_widgets', 'kawi_has_footer_widgets' );
 function kawi_has_footer_widgets( $has_footer_widgets = false ){
 	return is_active_sidebar( 'sidebar-1' ) && ( 'sidebar-bottom' === get_theme_mod( 'kawi_sidebar_position', 'sidebar-right' ) );
 }
-
-
