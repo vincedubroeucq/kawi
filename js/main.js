@@ -97,10 +97,12 @@ document.addEventListener('DOMContentLoaded', function (e) {
   var focusables = menuArea.querySelectorAll('a', 'select', 'input', 'button', 'textarea');
   var lastFocusable = focusables[focusables.length - 1];
 
-  lastFocusable.onblur = function (e) {
-    menuArea.classList.remove('open');
-    document.querySelectorAll('.menu-toggle').forEach(function (toggle) {
-      toggle.setAttribute('aria-expanded', 'false');
-    });
-  };
+  if (lastFocusable) {
+    lastFocusable.onblur = function (e) {
+      menuArea.classList.remove('open');
+      document.querySelectorAll('.menu-toggle').forEach(function (toggle) {
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    };
+  }
 });

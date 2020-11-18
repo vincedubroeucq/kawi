@@ -245,6 +245,15 @@ function kawi_widgets_init() {
 		'before_title'  => '<h2 class="widget-title h6">',
 		'after_title'   => '</h2>',
 	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'Footer widget area', 'kawi' ),
+		'id'            => 'sidebar-2',
+		'description'   => esc_html__( 'Widgets added here will appear just before the footer.', 'kawi' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="widget-title h6">',
+		'after_title'   => '</h2>',
+	) );
 }
 
 
@@ -256,8 +265,8 @@ function kawi_scripts() {
 	$stylesheet_uri = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? get_stylesheet_uri() : get_theme_file_uri( 'style.min.css' );	
 	$script_name    = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '/js/src/main.js' : '/js/main.min.js';	
 	wp_enqueue_style( 'kawi-fonts', kawi_slug_fonts_url(), array(), null );
-	wp_enqueue_style( 'kawi-styles', $stylesheet_uri, array(), null );
-	wp_enqueue_script( 'kawi-scripts', get_template_directory_uri() . $script_name, array(), null, false );
+	wp_enqueue_style( 'kawi-styles', $stylesheet_uri, array(), '1.2.0' );
+	wp_enqueue_script( 'kawi-scripts', get_template_directory_uri() . $script_name, array(), '1.2.0', false );
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}

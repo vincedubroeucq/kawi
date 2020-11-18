@@ -10,7 +10,8 @@ The theme is very simple to use and supports WordPress' core functionalities:
 - custom header
 - custom menu
 - featured images (post thumbnails)
-- A single widget area you can place on the left, right, or at the bottom, just before the footer.
+- A standard widget area you can place on the left, right, or at the bottom, just before the footer.
+- An additional footer widget area if you need both a sidebar and a footer widget area.
 
 There are five menu locations :
 

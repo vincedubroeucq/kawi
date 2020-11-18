@@ -72,13 +72,15 @@ document.addEventListener('DOMContentLoaded', (e) => {
     });
 
     // Close the menu when the last focusable element is blurred
-    const menuArea = document.querySelector('.menu-area');
+    const menuArea   = document.querySelector('.menu-area');
     const focusables = menuArea.querySelectorAll('a', 'select', 'input', 'button', 'textarea');
     const lastFocusable = focusables[focusables.length - 1];
-    lastFocusable.onblur = e => {
-        menuArea.classList.remove('open');
-        document.querySelectorAll('.menu-toggle').forEach(toggle => {
-            toggle.setAttribute('aria-expanded', 'false');
-        });
-    };
+    if( lastFocusable ){
+        lastFocusable.onblur = e => {
+            menuArea.classList.remove('open');
+            document.querySelectorAll('.menu-toggle').forEach(toggle => {
+                toggle.setAttribute('aria-expanded', 'false');
+            });
+        };
+    }
 });
