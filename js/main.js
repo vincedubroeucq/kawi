@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
         const menuArea = document.querySelector('.menu-area');
         const toggle = document.querySelector('.menu-toggle');
         if (!menuArea.classList.contains('open')) return;
-        if (e.path.includes(toggle)) return;
+        if (e.composedPath().includes(toggle)) return;
         if (e.clientX < (window.innerWidth - menuArea.offsetWidth)) {
             menuArea.classList.remove('open');
             document.querySelectorAll('.menu-toggle').forEach(toggle => {
