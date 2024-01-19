@@ -1,8 +1,8 @@
 === Kawi ===
 Contributors: vincentdubroeucq, audrasjb, sebastienserre
 Requires PHP: 5.6
-Requires at least: 4.7
-Tested up to: 5.5.1
+Requires at least: 5.0
+Tested up to: 6.4.2
 Stable tag: 1.3.0
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
