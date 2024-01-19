@@ -4,7 +4,7 @@ Theme URI: https://wordpress.org/themes/kawi/
 Author: Vincent Dubroeucq
 Author URI: https://vincentdubroeucq.com
 Description: A clean and simple theme for any blog.
-Version: 1.2.0
+Version: 1.3.0
 Requires at least: WordPress 4.7
 Tested up to: 5.5.1
 Requires PHP: 5.6
@@ -382,6 +382,24 @@ template {
 /**************************
  * Typography
  **************************/
+@font-face {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 300 900;
+  src: url("./fonts/mulish/mulish.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Mulish";
+  font-style: italic;
+  font-weight: 300 900;
+  src: url("./fonts/mulish/mulish-italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Oxygen Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/oxygen-mono/oxygen-mono.ttf") format("truetype");
+}
 body,
 button,
 input,
@@ -389,7 +407,8 @@ select,
 optgroup,
 textarea {
   color: #3d4852;
-  font-family: "Muli", "system-ui", "BlinkMacSystemFont", "-apple-system", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "sans-serif";
+  font-family: "Mulish", "system-ui", "BlinkMacSystemFont", "-apple-system", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "sans-serif";
+  font-weight: 400;
   font-size: 1rem;
   line-height: 1.6;
 }

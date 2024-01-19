@@ -21,7 +21,7 @@ class Kawi_Customize_Multi_Checkbox_Control extends WP_Customize_Control {
 	 * @return void
 	 */
 	public function enqueue() {
-		wp_enqueue_script( 'kawi-customize-controls', get_template_directory_uri() . '/js/multi-checkbox-customize-controls.js' );
+		wp_enqueue_script( 'kawi-customize-controls', get_template_directory_uri() . '/js/multi-checkbox-customize-controls.min.js' );
 	}
 
 	/**

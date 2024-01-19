@@ -1,6 +1,27 @@
 /**************************
  * Typography
  **************************/
+@font-face {
+	font-family: 'Mulish';
+	font-style: normal;
+	font-weight: 300 900;
+	src: url('./fonts/mulish/mulish.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Mulish';
+	font-style: italic;
+	font-weight: 300 900;
+	src: url('./fonts/mulish/mulish-italic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Oxygen Mono';
+	font-style: normal;
+	font-weight: 400;
+	src: url('./fonts/oxygen-mono/oxygen-mono.ttf') format('truetype');
+}
+
 body,
 button,
 input,
@@ -9,6 +30,7 @@ optgroup,
 textarea {
 	color: $grey-900;
 	font-family: $main-font;
+	font-weight: 400;
 	font-size: $txt-md;
 	line-height: 1.6;
 	@media screen and ( min-width: $lg ){

@@ -4,6 +4,24 @@
 /**************************
  * Typography
  **************************/
+@font-face {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 300 900;
+  src: url("./fonts/mulish/mulish.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Mulish";
+  font-style: italic;
+  font-weight: 300 900;
+  src: url("./fonts/mulish/mulish-italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Oxygen Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/oxygen-mono/oxygen-mono.ttf") format("truetype");
+}
 body,
 button,
 input,
@@ -11,7 +29,8 @@ select,
 optgroup,
 textarea {
   color: #3d4852;
-  font-family: "Muli", "system-ui", "BlinkMacSystemFont", "-apple-system", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "sans-serif";
+  font-family: "Mulish", "system-ui", "BlinkMacSystemFont", "-apple-system", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "sans-serif";
+  font-weight: 400;
   font-size: 1rem;
   line-height: 1.6;
 }

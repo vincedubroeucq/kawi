@@ -262,11 +262,11 @@ add_action( 'wp_enqueue_scripts', 'kawi_scripts' );
  * Enqueue scripts and styles.
  */
 function kawi_scripts() {
+	$version = wp_get_theme()->version;
 	$stylesheet_uri = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? get_stylesheet_uri() : get_theme_file_uri( 'style.min.css' );	
-	$script_name    = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '/js/src/main.js' : '/js/main.min.js';	
-	wp_enqueue_style( 'kawi-fonts', kawi_slug_fonts_url(), array(), null );
-	wp_enqueue_style( 'kawi-styles', $stylesheet_uri, array(), '1.2.0' );
-	wp_enqueue_script( 'kawi-scripts', get_template_directory_uri() . $script_name, array(), '1.2.0', false );
+	$script_name    = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '/js/main.js' : '/js/main.min.js';	
+	wp_enqueue_style( 'kawi-styles', $stylesheet_uri, array(), $version );
+	wp_enqueue_script( 'kawi-scripts', get_template_directory_uri() . $script_name, array(), $version, false );
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
