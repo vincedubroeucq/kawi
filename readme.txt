@@ -68,10 +68,6 @@ Kawi includes support for Infinite Scroll and basic content options in Jetpack.
 
 == Changelog ==
 
-= 1.3.0 - January 2024 =
-* Fixed JS bug
-* Switch to local fonts
-
 = 1.2.0 - November 2020 =
 * Fixed JavaScript error
 * Added a footer sidebar

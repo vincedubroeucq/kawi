@@ -17,7 +17,8 @@
     margin-right: auto;
     max-width: $xxl;
     padding: $sp-sm;
-    @media screen and (min-width: $lg){
+
+    @media screen and (min-width: $lg) {
         padding: $sp-md;
     }
 }
@@ -26,7 +27,8 @@
     align-items: center;
     display: flex;
     justify-content: space-between;
-    @media screen and (min-width: $lg){
+
+    @media screen and (min-width: $lg) {
         padding-top: $sp-sm;
         padding-bottom: $sp-sm;
     }
@@ -43,6 +45,7 @@
     display: inline-block;
     line-height: 1;
     transition: all .25s ease-in-out;
+
     &:hover,
     &:focus {
         background-color: transparent;
@@ -60,18 +63,19 @@
 }
 
 .site-title {
-    // font-size: $txt-xl;
     font-size: $txt-sm;
     font-weight: bold;
     margin: 0;
+
     a {
         text-decoration: none;
+
         &:hover,
         &:focus {
             color: #fff;
         }
     }
-} 
+}
 
 .site-description {
     color: $grey-500;
@@ -92,7 +96,8 @@
     visibility: hidden;
     width: 0;
     z-index: -10;
-    @media screen and (min-width: $lg){
+
+    @media screen and (min-width: $lg) {
         background: transparent;
         border-top: none;
         box-shadow: none;
@@ -110,17 +115,20 @@
     visibility: visible;
     width: 80vw;
     z-index: 10;
-    @media screen and (min-width: $lg){
+
+    @media screen and (min-width: $lg) {
         width: auto;
     }
 }
 
 .admin-bar .sidebar-menu-area {
     margin-top: 46px;
-    @media screen and (min-width: 782px){
+
+    @media screen and (min-width: 782px) {
         margin-top: 32px;
     }
-    @media screen and (min-width: $lg){
+
+    @media screen and (min-width: $lg) {
         margin-top: 0;
     }
 }
@@ -128,7 +136,7 @@
 .main-navigation,
 .footer-menu-section {
     color: $grey-500;
-    
+
     a {
         border-bottom: 4px solid transparent;
         border-top: 4px solid transparent;
@@ -140,12 +148,12 @@
 
     a:hover,
     a:focus,
-    .current-menu-item a {
+    .current-menu-item>a {
         background-color: transparent;
         border-bottom-color: $grey-900;
         color: $grey-900;
     }
-    
+
     a:visited {
         color: inherit;
     }
@@ -155,14 +163,17 @@
     background: transparent;
     border: none;
     padding: $sp-3xs;
+
     &:hover,
     &:focus {
         background-color: $grey-900;
         color: white;
+
         svg {
             fill: currentColor;
         }
     }
+
     svg {
         fill: $grey-900;
         margin: 0;
@@ -170,15 +181,16 @@
 }
 
 .menu-toggle {
-    @media screen and (min-width: $lg){
+    @media screen and (min-width: $lg) {
         display: none;
     }
 }
 
 .menu-section {
-    border-top: 1px solid $grey-200; 
+    border-top: 1px solid $grey-200;
     padding: $sp-sm;
-    @media screen and (min-width: $lg){
+
+    @media screen and (min-width: $lg) {
         align-items: flex-end;
         border-top: none;
         display: flex;
@@ -191,7 +203,8 @@
     border-top: none;
     display: flex;
     justify-content: space-between;
-    @media screen and (min-width: $lg){
+
+    @media screen and (min-width: $lg) {
         display: none;
     }
 }
@@ -204,13 +217,14 @@
     list-style: none;
     padding: 0;
     margin: 0;
+
     ul {
         list-style: none;
     }
 }
 
 .primary-menu {
-    @media screen and (min-width: $lg){
+    @media screen and (min-width: $lg) {
         display: flex;
         flex-wrap: wrap;
     }
@@ -220,7 +234,8 @@
 .page_item {
     position: relative;
     margin-top: $sp-2xs;
-    @media screen and (min-width: $lg){
+
+    @media screen and (min-width: $lg) {
         margin-top: 0;
         margin-left: $sp-sm;
     }
@@ -230,22 +245,24 @@
 .menu-item-has-childen .children,
 .page_item_has_children .children {
     font-size: $txt-sm;
+
     .menu-item,
     .page_item {
         margin-top: $sp-3xs;
     }
 
-    @media screen and (min-width: $lg){
+    @media screen and (min-width: $lg) {
         background-color: white;
         height: max-content;
         left: 0;
         opacity: 0;
         padding: $sp-md;
         position: absolute;
-        transition: opacity .25s ease-in-out; 
+        transition: opacity .25s ease-in-out;
         visibility: hidden;
         width: max-content;
         z-index: -10;
+
         ul {
             position: inherit;
             padding: 0;
@@ -253,11 +270,13 @@
     }
 }
 
-.menu-item-has-children, 
+.menu-item-has-children,
 .page_item_has_children {
     position: relative;
+
     &:hover,
     &:focus-within {
+
         .sub-menu,
         .children {
             opacity: 1;
@@ -272,17 +291,18 @@
     flex-wrap: wrap;
     line-height: 1;
     margin: $sp-xs 0;
-    
+
     li {
         margin: 0;
     }
-    
+
     a {
         margin-right: $sp-2xs;
     }
 
-    @media screen and (min-width: $lg){
+    @media screen and (min-width: $lg) {
         margin: 0 0 0 $sp-xs;
+
         a {
             margin-left: $sp-3xs;
             margin-right: 0;
@@ -297,7 +317,7 @@
 .topbar-menu {
     align-items: center;
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     justify-content: flex-end;
     line-height: 1;
 
@@ -310,7 +330,9 @@
         font-size: $sp-xs;
         text-decoration: none;
         text-transform: uppercase;
-        &:hover,&:focus {
+
+        &:hover,
+        &:focus {
             text-decoration: underline;
         }
     }
@@ -356,15 +378,15 @@
 
 .hero-image-full .hero-image {
     margin-left: calc(50% - 50vw);
-	margin-right: calc(50% - 50vw);
-	width: auto;
-	max-width: 1000%;
+    margin-right: calc(50% - 50vw);
+    width: auto;
+    max-width: 1000%;
 }
 
 .hero-background,
 .header-background {
     .hero {
-        @media screen and ( min-width: $md ) {
+        @media screen and (min-width: $md ) {
             height: 50vw;
             max-height: $lg;
         }
@@ -379,11 +401,14 @@
             color: $grey-700;
         }
     }
+
     &.dark-filter {
-        .main-title, 
+
+        .main-title,
         .main-meta {
             color: #fff;
         }
+
         .main-meta {
             opacity: 0.9;
         }
@@ -396,7 +421,8 @@
         .site-description {
             color: $grey-700;
         }
-        @media screen and (min-width: $lg){
+
+        @media screen and (min-width: $lg) {
             .main-navigation {
                 color: $grey-700;
             }
@@ -404,22 +430,28 @@
     }
 
     &.dark-filter {
-        .site-title, 
-        .site-description{
+
+        .site-title,
+        .site-description {
             color: #fff;
         }
+
         .site-description {
             opacity: .9;
         }
+
         .icon-menu {
             fill: #fff;
         }
-        @media screen and (min-width: $lg){
+
+        @media screen and (min-width: $lg) {
             .main-navigation {
                 color: #fff;
+
                 a {
                     opacity: .9;
                 }
+
                 a:hover,
                 a:focus,
                 .current-menu-item a {
@@ -431,7 +463,9 @@
                 .sub-menu,
                 .children {
                     color: $grey-500;
+
                     a {
+
                         &:hover,
                         &:focus {
                             background-color: transparent;
@@ -442,8 +476,5 @@
                 }
             }
         }
-    } 
+    }
 }
-
-
-

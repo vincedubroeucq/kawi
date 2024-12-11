@@ -1210,10 +1210,10 @@ object {
 }
 .main-navigation a:hover,
 .main-navigation a:focus,
-.main-navigation .current-menu-item a,
+.main-navigation .current-menu-item > a,
 .footer-menu-section a:hover,
 .footer-menu-section a:focus,
-.footer-menu-section .current-menu-item a {
+.footer-menu-section .current-menu-item > a {
   background-color: transparent;
   border-bottom-color: #3d4852;
   color: #3d4852;
