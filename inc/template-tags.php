@@ -384,10 +384,11 @@ function kawi_hero_image() {
 	}
 	
 	$img_tag = false;
-	
-	if ( is_singular() && has_post_thumbnail() && kawi_jetpack_featured_image_display() ) {
+	$queried_object_id = get_queried_object_id();
+
+	if ( ( is_singular() || is_home() ) && has_post_thumbnail( $queried_object_id ) && kawi_jetpack_featured_image_display() ) {
 		$size = 'hero-image-full' === $header_image_setting ? 'kawi-featured-full' : 'kawi-featured-large';
-		$img_tag = get_the_post_thumbnail( null, $size );
+		$img_tag = get_the_post_thumbnail( $queried_object_id, $size );
 	} elseif( get_header_image() ){
 		$img_tag = get_header_image_tag();
 	}

@@ -222,10 +222,11 @@ function kawi_head_styles(){
 	$header_image_setting = get_theme_mod( 'kawi_header_image_display', 'hero-image' );
 	if( in_array( $header_image_setting, [ 'hero-background', 'header-background' ] ) ){
 		$url = false;
-		
+		$queried_object_id = get_queried_object_id();
+
 		// Get Featured image url if any. Otherwise, get default header image url.
-		if ( is_singular() && has_post_thumbnail() && kawi_jetpack_featured_image_display() ) {
-			$url = get_the_post_thumbnail_url(null, 'kawi-featured-full');
+		if ( ( is_singular() || is_home() ) && has_post_thumbnail( $queried_object_id ) && kawi_jetpack_featured_image_display() ) {
+			$url = get_the_post_thumbnail_url($queried_object_id, 'kawi-featured-full');
 		} elseif( has_header_image() ){         
 			$url = get_header_image();
 		}
@@ -252,5 +253,4 @@ function kawi_head_styles(){
 	if( $styles ){
 		echo '<style type="text/css" id="kawi-customizer-css">' . esc_html( $styles ) . '</style>';
 	}
-  
 }
