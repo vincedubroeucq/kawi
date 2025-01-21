@@ -7,11 +7,12 @@
  * @package Kawi
  */
 
+$layout = get_theme_mod( 'kawi_blog_posts_layout', 'posts-list' );
 get_header();
 ?>
 
 	<main id="main" class="main-content" role="main">
-		<div id="content-wrapper" class="wrapper content-wrapper">
+		<div id="content-wrapper" class="wrapper content-wrapper <?php echo esc_attr( $layout ); ?>">
 
 		<?php 
 		if ( have_posts() ) : 

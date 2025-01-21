@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-01-21T14:51:40+00:00\n"
+"POT-Creation-Date: 2025-01-21T15:27:20+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: kawi\n"
@@ -184,83 +184,95 @@ msgstr ""
 msgid "Skip to content"
 msgstr ""
 
-#: inc/customizer.php:52
+#: inc/customizer.php:49
 msgid "Layout"
 msgstr ""
 
-#: inc/customizer.php:71
+#: inc/customizer.php:68
 msgid "Header image display"
 msgstr ""
 
-#: inc/customizer.php:74
+#: inc/customizer.php:71
 msgid "Standard hero image"
 msgstr ""
 
-#: inc/customizer.php:75
+#: inc/customizer.php:72
 msgid "Full width hero image"
 msgstr ""
 
-#: inc/customizer.php:76
+#: inc/customizer.php:73
 msgid "Background image on hero section"
 msgstr ""
 
-#: inc/customizer.php:77
+#: inc/customizer.php:74
 msgid "Background image on whole header"
 msgstr ""
 
-#: inc/customizer.php:86
+#: inc/customizer.php:83
 msgid "Header image filter"
 msgstr ""
 
-#: inc/customizer.php:89
+#: inc/customizer.php:86
 msgid "No filter on header image."
 msgstr ""
 
-#: inc/customizer.php:90
+#: inc/customizer.php:87
 msgid "Light text on darker image."
 msgstr ""
 
-#: inc/customizer.php:91
+#: inc/customizer.php:88
 msgid "Dark text on lighter image."
 msgstr ""
 
-#: inc/customizer.php:100
+#: inc/customizer.php:97
+msgid "Blog posts layout"
+msgstr ""
+
+#: inc/customizer.php:101
+msgid "List"
+msgstr ""
+
+#: inc/customizer.php:102
+msgid "Grid"
+msgstr ""
+
+#: inc/customizer.php:111
 msgid "Blog post featured image display"
 msgstr ""
 
-#: inc/customizer.php:104
+#: inc/customizer.php:115
 msgid "Small thumbnail"
 msgstr ""
 
-#: inc/customizer.php:105
+#: inc/customizer.php:116
 msgid "Large featured image"
 msgstr ""
 
-#: inc/customizer.php:115
+#: inc/customizer.php:126
 msgid "Widget area position"
 msgstr ""
 
-#: inc/customizer.php:119
+#: inc/customizer.php:130
 msgid "Widget area on the left"
 msgstr ""
 
-#: inc/customizer.php:120
+#: inc/customizer.php:131
 msgid "Widget area on the right"
 msgstr ""
 
-#: inc/customizer.php:121
+#: inc/customizer.php:132
 msgid "Widget area below content"
 msgstr ""
 
-#: inc/customizer.php:130
+#: inc/customizer.php:141
 msgid "Title to display on front page"
 msgstr ""
 
-#: inc/customizer.php:134
+#: inc/customizer.php:145
 msgid "Display site title"
 msgstr ""
 
-#: inc/customizer.php:135
+#: inc/customizer.php:146
 msgid "Display page title"
 msgstr ""
 

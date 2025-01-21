@@ -9,7 +9,7 @@
     "build": "npm run sass && npm run css && npm run terser && npm run make-pot && npm run archive",
     "sass": "sass sass/style.scss:style.css sass/editor-style.scss:editor-style.css",
     "css": "sass --style=compressed sass/style.scss:style.min.css sass/editor-style.scss:editor-style.min.css",
-    "terser": "terser js/main.js -o js/main.min.js && terser js/customizer.js -o js/customizer.min.js && terser js/multi-checkbox-customize-controls.js -o js/multi-checkbox-customize-controls.min.js",
+    "terser": "terser js/main.js -o js/main.min.js && terser js/customizer.js -o js/customizer.min.js",
     "make-pot": "wp i18n make-pot . languages/kawi.pot",
     "archive": "wp dist-archive . kawi.zip",
     "test": "echo \"Error: no test specified\" && exit 1"

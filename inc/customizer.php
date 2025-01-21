@@ -13,9 +13,6 @@ add_action( 'customize_register', 'kawi_customize_register' );
  */
 function kawi_customize_register( $wp_customize ) {
 
-	// Load our custom Control
-	// require_once 'class-wp-customize-multi-checkbox-control.php';
-
 	// Add postMessage support for site title, description and header text color.
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
@@ -89,6 +86,20 @@ function kawi_get_customizer_settings() {
 					'no-filter'    => __( 'No filter on header image.', 'kawi' ),
 					'dark-filter'  => __( 'Light text on darker image.', 'kawi' ),
 					'light-filter' => __( 'Dark text on lighter image.', 'kawi' ),
+				],
+			]
+		],
+		'kawi_blog_posts_layout' => [
+			'default' => 'posts-list',
+			'sanitize_callback' => 'kawi_validate_choice',
+			'control' => [
+				'type' => 'radio',
+				'label' => __( 'Blog posts layout', 'kawi' ),
+				'section' => 'layout',
+				'active_callback' => function(){ return is_home(); },
+				'choices' => [
+					'posts-list' => __( 'List', 'kawi' ),
+					'posts-grid' => __( 'Grid', 'kawi' ),
 				],
 			]
 		],
@@ -167,12 +178,8 @@ function kawi_register_customizer_setting( $args, $id, $wp_customize ) {
 			case 'color':
 				$id_or_control = new WP_Customize_Color_Control( $wp_customize, $id, $args['control']);
 				break;
-			case 'multi-checkbox':
-				$id_or_control = new Kawi_Customize_Multi_Checkbox_Control( $wp_customize, $id, $args['control'] );
-				break;
 		}
 	}
-
 	$wp_customize->add_control( $id_or_control, $args['control'] );
 }
 
@@ -191,10 +198,6 @@ function kawi_validate_choice( $value, $setting ) {
 		$default = ! empty( $settings[$setting->id]['default'] ) ? $settings[$setting->id]['default'] : '';
 		$valid   = ! empty( $settings[$setting->id]['control']['choices'] ) ? $settings[$setting->id]['control']['choices'] : [];
 		$return  = array_key_exists( $value, $valid ) ? $value : $default;
-		if( 'multi-checkbox' === $settings[$setting->id]['control']['type'] ){
-			$intersection = array_intersect( array_keys( $valid ) , explode( ',', $value ) );
-			$return = ! empty( $intersection ) ? implode( ',', $intersection) : '';
-		}
 	}
 	return $return;
 }

@@ -10,6 +10,22 @@
     max-width: $xxl;
 }
 
+.content-wrapper {
+    display: grid;
+    gap: $sp-xl;
+    grid-auto-flow: row dense;
+    max-width: $md;
+    margin: 0 auto;
+    @media screen and (min-width: $lg) {
+        max-width: $content;
+    }
+
+    &.posts-grid {
+        max-width: $xl;
+        grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+    }
+}
+
 .single.no-sidebar.hero-background .content-area,
 .single.no-sidebar.header-background .content-area,
 .single.sidebar-bottom.hero-background .content-area,
@@ -51,21 +67,6 @@
             grid-column-start: 2;
         }
     }
-} 
-
-.content-wrapper {
-    max-width: $md;
-    margin: 0 auto;
-    @media screen and (min-width: $lg) {
-        max-width: $content;
-    }
-}
-
-@media screen and (min-width: $xxl) {
-    .sidebar-left .content-wrapper,
-    .sidebar-right .content-wrapper {
-        max-width: none;
-    }
 }
 
 .hentry,
@@ -75,7 +76,6 @@
     border: 1px solid $grey-2;
     border-top: 8px solid $grey-9;
     padding: $sp-md;
-    margin-bottom: $sp-xl;
 }
 
 .single .hentry,
@@ -152,7 +152,7 @@
 }
 
 .small-thumbnail {
-    border-top: none;
+    border: 1px solid $grey-2;
     border-left: 8px solid $grey-9;
 
     .post-header {
