@@ -28,8 +28,6 @@ get_header();
 
 					endwhile;
 
-					kawi_the_posts_navigation( 'page-numbers' );
-
 				else :
 
 					get_template_part( 'template-parts/content/content', 'none' );
@@ -37,6 +35,7 @@ get_header();
 				endif; 
 			?>
 		</div><!-- .content-wrapper -->
+		<?php kawi_the_posts_navigation( 'page-numbers' ); ?>
 	</main><!-- #main -->
 
 <?php

@@ -4,6 +4,8 @@
 .navigation,
 .pagination {
     background-color: white;
+    max-width: $content;
+    margin: $sp-md auto;
 }
 
 .nav-links,

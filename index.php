@@ -18,7 +18,7 @@ get_header();
 
 	<main id="main" class="main-content" role="main">
 		<div id="content-wrapper" class="wrapper content-wrapper <?php echo esc_attr( $layout ); ?>">
-			<?php
+			<?php 
 				if ( have_posts() ) :
 
 					/* Start the Loop */
@@ -33,8 +33,6 @@ get_header();
 
 					endwhile;
 
-					kawi_the_posts_navigation();
-
 				else :
 
 					get_template_part( 'template-parts/content/content', 'none' );
@@ -42,6 +40,7 @@ get_header();
 				endif; 
 			?>
 		</div><!-- .content-wrapper -->
+		<?php kawi_the_posts_navigation(); ?>
 	</main><!-- #main -->
 
 <?php

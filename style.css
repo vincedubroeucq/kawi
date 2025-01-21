@@ -2013,6 +2013,8 @@ p.has-background {
 .navigation,
 .pagination {
   background-color: white;
+  max-width: 900px;
+  margin: 1.5rem auto;
 }
 
 .nav-links,
