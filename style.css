@@ -1529,8 +1529,6 @@ object {
 }
 
 .content-wrapper {
-  display: grid;
-  gap: 3rem;
   grid-auto-flow: row dense;
   max-width: 768px;
   margin: 0 auto;
@@ -1538,11 +1536,19 @@ object {
 @media screen and (min-width: 992px) {
   .content-wrapper {
     max-width: 900px;
+    display: grid;
   }
 }
-.content-wrapper.posts-grid {
-  max-width: 1280px;
-  grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+@media screen and (min-width: 992px) {
+  .content-wrapper.posts-grid {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+    max-width: 1280px;
+  }
+  .content-wrapper.posts-grid .post {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -1596,29 +1602,28 @@ object {
   }
 }
 
-.hentry,
+.post,
 .no-results,
 .error-404 {
   background-color: #fff;
   border: 1px solid #dae1e7;
   border-top: 8px solid #3d4852;
   padding: 1.5rem;
+  margin-bottom: 3rem;
 }
 
-.single .hentry,
-.page.hentry {
+.single .post {
   border: none;
   margin-bottom: 0;
 }
 
+.single-post .content-wrapper, .page .content-wrapper {
+  border-top: 8px solid #3d4852;
+}
+
 .post-thumbnail {
   display: block;
-  margin: -1rem -1rem 1rem -1rem;
-}
-@media screen and (min-width: 992px) {
-  .post-thumbnail {
-    margin: -1.5rem -1.5rem 1.5rem -1.5rem;
-  }
+  margin: -1.5rem -1.5rem 1.5rem -1.5rem;
 }
 .post-thumbnail img {
   display: block;

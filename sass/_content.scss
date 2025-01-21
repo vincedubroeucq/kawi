@@ -11,18 +11,24 @@
 }
 
 .content-wrapper {
-    display: grid;
-    gap: $sp-xl;
     grid-auto-flow: row dense;
     max-width: $md;
     margin: 0 auto;
     @media screen and (min-width: $lg) {
         max-width: $content;
+        display: grid;
     }
 
     &.posts-grid {
-        max-width: $xl;
-        grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+        @media screen and (min-width: $lg) {
+            display: grid;
+            gap: $sp-xl;
+            grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+            max-width: $xl;
+            .post {
+                margin-bottom: 0;
+            }
+        }
     }
 }
 
@@ -69,27 +75,30 @@
     }
 }
 
-.hentry,
+.post,
 .no-results,
 .error-404 {
     background-color: #fff;
     border: 1px solid $grey-2;
     border-top: 8px solid $grey-9;
     padding: $sp-md;
+    margin-bottom: $sp-xl;
 }
 
-.single .hentry,
-.page.hentry {
+.single .post {
     border: none;
 	margin-bottom: 0;
 }
 
+.single-post, .page {
+    .content-wrapper {
+        border-top: 8px solid $grey-9;
+    }
+}
+
 .post-thumbnail {
     display: block;
-    margin: #{-$sp-sm} #{-$sp-sm} #{$sp-sm} #{-$sp-sm};
-    @media screen and (min-width: $lg){
-        margin: #{-$sp-md} #{-$sp-md} #{$sp-md} #{-$sp-md};
-    }
+    margin: #{-$sp-md} #{-$sp-md} #{$sp-md} #{-$sp-md};
     img {
         display: block;
         margin: 0 auto;
