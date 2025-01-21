@@ -109,6 +109,13 @@ if ( ! function_exists( 'kawi_setup' ) ) :
 
 		// Gutenberg supports
 		add_theme_support( 'align-wide' );
+		add_theme_support( 'appearance-tools' );
+		add_theme_support( 'border' );
+		add_theme_support( 'custom-spacing' );
+		add_theme_support( 'custom-units' );
+		add_theme_support( 'core-block-patterns' );
+		add_theme_support( 'link-color' );
+		add_theme_support( 'wp-block-styles' );
 		add_theme_support( 'editor-font-sizes', array(
 			array(
 				'name' => __( 'Small', 'kawi' ),
@@ -225,7 +232,7 @@ function kawi_content_width() {
 	// This variable is intended to be overruled from themes.
 	// Open WPCS issue: {@link https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/issues/1043}.
 	// phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound
-	$GLOBALS['content_width'] = apply_filters( 'kawi_content_width', 1600 );
+	$GLOBALS['content_width'] = apply_filters( 'kawi_content_width', 900 );
 }
 
 
@@ -263,7 +270,7 @@ add_action( 'wp_enqueue_scripts', 'kawi_scripts' );
  */
 function kawi_scripts() {
 	$version = wp_get_theme()->version;
-	$stylesheet_uri = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? get_stylesheet_uri() : get_theme_file_uri( 'style.min.css' );	
+	$stylesheet_uri = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? get_parent_theme_file_uri( 'style.css' ) : get_parent_theme_file_uri( 'style.min.css' );	
 	$script_name    = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '/js/main.js' : '/js/main.min.js';	
 	wp_enqueue_style( 'kawi-styles', $stylesheet_uri, array(), $version );
 	wp_enqueue_script( 'kawi-scripts', get_template_directory_uri() . $script_name, array(), $version, false );

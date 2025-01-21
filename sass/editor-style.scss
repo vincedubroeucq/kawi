@@ -2,9 +2,15 @@
  *  Editor styles
  *******************/
 @import "variables";
+@import "mixins";
 @import "typography";
 @import "elements";
 @import "media";
+@import "content";
+@import "blocks";
+@import "pagination";
+@import "widgets";
+@import "helpers"; 
 
 body {
     overflow-x: hidden;
@@ -52,7 +58,7 @@ body {
 
 .wp-block-quote.is-large, 
 .wp-block-quote.is-style-large {
-    border-left: 8px solid $grey-900;
+    border-left: 8px solid $grey-9;
     margin: $sp-md 0;
     padding: $sp-lg; 
 }
@@ -94,7 +100,7 @@ body {
 .wp-block-table.is-style-stripes {
     border: none;
     tr {
-        background: $grey-100;
+        background: $grey-1;
     }
     tr:nth-child(even){
         background-color: transparent; 

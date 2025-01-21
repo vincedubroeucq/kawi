@@ -2,7 +2,7 @@
  * Navigation bar
  **************************/
 .site-header {
-    border-top: 8px solid $grey-900;
+    border-top: 8px solid $grey-9;
 }
 
 .hero,
@@ -78,13 +78,13 @@
 }
 
 .site-description {
-    color: $grey-500;
+    color: $grey-5;
     font-size: $txt-xs;
     margin: $sp-3xs 0 0;
 }
 
 .sidebar-menu-area {
-    box-shadow: 0 4px 4px 1px $grey-500;
+    box-shadow: 0 4px 4px 1px $grey-5;
     background: #ffffff;
     height: 100vh;
     max-width: 450px;
@@ -135,7 +135,7 @@
 
 .main-navigation,
 .footer-menu-section {
-    color: $grey-500;
+    color: $grey-5;
 
     a {
         border-bottom: 4px solid transparent;
@@ -150,8 +150,8 @@
     a:focus,
     .current-menu-item>a {
         background-color: transparent;
-        border-bottom-color: $grey-900;
-        color: $grey-900;
+        border-bottom-color: $grey-9;
+        color: $grey-9;
     }
 
     a:visited {
@@ -166,7 +166,7 @@
 
     &:hover,
     &:focus {
-        background-color: $grey-900;
+        background-color: $grey-9;
         color: white;
 
         svg {
@@ -175,7 +175,7 @@
     }
 
     svg {
-        fill: $grey-900;
+        fill: $grey-9;
         margin: 0;
     }
 }
@@ -187,7 +187,7 @@
 }
 
 .menu-section {
-    border-top: 1px solid $grey-200;
+    border-top: 1px solid $grey-2;
     padding: $sp-sm;
 
     @media screen and (min-width: $lg) {
@@ -311,7 +311,7 @@
 }
 
 .topbar-nav {
-    background-color: $grey-900;
+    background-color: $grey-9;
 }
 
 .topbar-menu {
@@ -371,7 +371,7 @@
 }
 
 .main-meta {
-    color: $grey-500;
+    color: $grey-5;
     font-size: $txt-sm;
     margin: $sp-sm 0 0;
 }
@@ -398,7 +398,7 @@
 .header-background {
     &.light-filter {
         .main-meta {
-            color: $grey-700;
+            color: $grey-7;
         }
     }
 
@@ -419,12 +419,12 @@
 .header-background {
     &.light-filter {
         .site-description {
-            color: $grey-700;
+            color: $grey-7;
         }
 
         @media screen and (min-width: $lg) {
             .main-navigation {
-                color: $grey-700;
+                color: $grey-7;
             }
         }
     }
@@ -462,15 +462,15 @@
 
                 .sub-menu,
                 .children {
-                    color: $grey-500;
+                    color: $grey-5;
 
                     a {
 
                         &:hover,
                         &:focus {
                             background-color: transparent;
-                            border-bottom-color: $grey-900;
-                            color: $grey-900;
+                            border-bottom-color: $grey-9;
+                            color: $grey-9;
                         }
                     }
                 }

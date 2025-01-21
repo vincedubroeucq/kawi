@@ -1,3 +1,138 @@
+/*******************
+  Layout
+********************/
+.block {
+	display: block;
+}
+.inline-block {
+	display: inline-block;
+}
+.inline {
+	display: inline;
+}
+.flex {
+	display: flex;
+}
+.inline-flex{
+	display: inline-flex
+}
+.flex-nowrap {
+	flex-wrap: nowrap;
+}
+.flex-wrap {
+	flex-wrap: wrap;
+}
+.flex-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+.flex-row {
+	flex-direction: row;
+}
+.flex-row-reverse {
+	flex-direction: row-reverse;
+}
+.flex-column {
+	flex-direction: column;
+}
+.flex-column-reverse {
+	flex-direction: column-reverse;
+}
+.flex-start {
+	justify-content: flex-start;
+}
+.flex-center {
+	justify-content: center;
+}
+.flex-end {
+	justify-content: flex-end;
+}
+.space-around {
+	justify-content: space-around;
+}
+.space-between {
+	justify-content: space-between;
+}
+.align-start {
+	align-items: flex-start;
+}
+.align-center {
+	align-items: center;
+}
+.align-end {
+	align-items: flex-end;
+}
+.grid {
+	display: grid;
+}
+.relative {
+	position: relative;
+}
+
+/*******************
+  Text 
+********************/
+.bold {
+	font-weight: bold; 
+}
+.italic {
+	font-style: italic;
+}
+.uppercase,
+.caps {
+	text-transform: uppercase;
+}
+.lowercase {
+	text-transform: lowercase;
+}
+.capitalize {
+	text-transform: capitalize;
+}
+.text-left {
+	text-align: left;
+}
+.text-center {
+	text-align: center;
+}
+.text-right {
+	text-align: right;
+}
+.small-caps {
+    color: $grey-7;
+    font-size: $txt-sm;
+    margin: 0;
+	text-transform: uppercase;
+}
+@include helper('font-size', 'txt-', $text-sizes);
+
+/*******************
+  Colors
+********************/
+.white {
+	color: #fff;
+}
+@include helper('color', '', $greys );
+@include helper('background-color', 'bg-', $greys );
+@include helper('color', '', $oranges );
+@include helper('background-color', 'bg-', $oranges );
+
+/*******************
+  Spacing
+********************/
+@include spacing-helper('padding', 'p', $spacings);
+@include spacing-helper('margin', 'm', $spacings);
+
+/*******************
+  Sizing
+********************/
+.h-100 {
+	height: 100%;
+}
+.w-100 {
+	width: 100%;
+}
+@include helper('max-width', 'mw-', $widths);
+@include helper('min-width', 'minw-', $widths);
+
 /**************************
  * Other helper classes
  **************************/
@@ -33,51 +168,4 @@
 /* Do not show the outline on the skip link target. */
 #content[tabindex="-1"]:focus {
 	outline: 0;
-}
-
-.small-caps {
-    color: $grey-700;
-    font-size: $txt-sm;
-    margin: 0;
-	text-transform: uppercase;
-}
-
-.caps {
-	text-transform: uppercase;
-}
-
-.pt-xl {
-    padding-top: $sp-xl !important;
-}
-
-.pb-xl {
-    padding-bottom: $sp-xl !important;
-}
-
-.pt-2xl {
-    padding-top: $sp-2xl !important;
-}
-
-.pb-2xl {
-    padding-bottom: $sp-2xl !important;
-}
-
-.mt-lg {
-    margin-top: $sp-lg !important;
-}
-
-.mb-lg {
-    margin-bottom: $sp-lg !important;
-}
-
-.mt-2xl {
-    margin-top: $sp-2xl !important;
-}
-
-.mb-2xl {
-    margin-bottom: $sp-2xl !important;
-}
-
-.inline-block {
-	display: inline-block;
 }

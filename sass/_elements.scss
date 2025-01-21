@@ -3,6 +3,7 @@
  **************************/
 html {
 	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 
 *,
@@ -17,7 +18,7 @@ body {
 }
 
 hr {
-	color: $grey-400;
+	color: $grey-4;
 	margin: $sp-md 0;
 }
 
@@ -64,12 +65,12 @@ figcaption {
 
 table {
 	border-collapse: collapse;
-	border: 1px solid $grey-700;
+	border: 1px solid $grey-7;
     width: 100%;
 }
 
 thead, tfoot, th {
-	background-color: $grey-900;
+	background-color: $grey-9;
 	color: white;
 	text-align: left;
 
@@ -80,14 +81,14 @@ thead, tfoot, th {
 		}
 		&:hover, 
 		&:focus {
-			color: $grey-900;
+			color: $grey-9;
 			background-color: white;
 		}
 	}
 }
 
 th, td {
-	border: 1px solid $grey-700;
+	border: 1px solid $grey-7;
 	padding: $sp-2xs;
 }
 

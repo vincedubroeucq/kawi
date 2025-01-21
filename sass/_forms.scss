@@ -4,21 +4,21 @@
 input,
 textarea,
 select {
-    background-color: $grey-100;
-    border: 1px solid $grey-200;
+    background-color: $grey-1;
+    border: 1px solid $grey-2;
     border-radius: 4px;
     max-width: 100%;
     padding: $sp-3xs $sp-xs;
     transition: all .25s ease-in-out;
     
     &::placeholder {
-        color: $grey-500;
+        color: $grey-5;
     }
     
     &:hover,
     &:focus {
-        background-color: $grey-200;
-        box-shadow: 0 0 2px 2px $grey-300;
+        background-color: $grey-2;
+        box-shadow: 0 0 2px 2px $grey-3;
         outline: none;
     }
 }
@@ -35,8 +35,8 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
     align-items: center;
-    background-color: $grey-900;
-    border: 1px solid $grey-900;
+    background-color: $grey-9;
+    border: 1px solid $grey-9;
     border-radius: 4px;
     color: white;
     cursor: pointer;
@@ -47,12 +47,12 @@ input[type="submit"] {
         
     &:hover,
     &:focus {
-        background-color: $grey-700;
-        box-shadow: 0 0 2px 2px $grey-300;
+        background-color: $grey-7;
+        box-shadow: 0 0 2px 2px $grey-3;
     }
 
     &:focus {
-        outline: 1px solid $grey-900;
+        outline: 1px solid $grey-9;
     }
 
     &:visited {
@@ -61,14 +61,14 @@ input[type="submit"] {
     
     &.button-secondary {
         background-color: transparent;
-        border-color: $grey-900;
-        color: $grey-900;
+        border-color: $grey-9;
+        color: $grey-9;
     }
 
     &.button-tertiary {
         background-color: transparent;
         border: none;
-        color: $grey-900;
+        color: $grey-9;
         text-decoration: underline;
     }
 
@@ -81,8 +81,8 @@ input[type="submit"] {
 .is-style-outline {
     .wp-block-button__link {
         background-color: transparent;
-        border-color: $grey-900;
-        color: $grey-900;
+        border-color: $grey-9;
+        color: $grey-9;
     }
 }
 

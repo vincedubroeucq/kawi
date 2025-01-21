@@ -3,7 +3,7 @@ Theme Name: Kawi
 Author: Vincent Dubroeucq
 Author URI: https://vincentdubroeucq.com
 Description: A clean and simple theme for any blog.
-Version: 1.3.0
+Version: 1.4.0
 Requires at least: WordPress 5.0
 Tested up to: 6.4.2
 Requires PHP: 7.4
@@ -49,6 +49,7 @@ Screenshot image from StockSnap.io (https: //stocksnap.io/photo/AAJD6NGTZE) Lice
 --------------------------------------------------------------*/
 
 @import "variables";
+@import "mixins";
 @import "normalize";
 @import "typography";
 @import "elements";

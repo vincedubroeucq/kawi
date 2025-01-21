@@ -1,22 +1,32 @@
 $black: #22292f;
-$grey-900: #3d4852;
-$grey-700: #58636F; 
-$grey-500: #677783;
-$grey-400: #9AACB6;
-$grey-300: #bac6d3;
-$grey-200: #dae1e7;
-$grey-100: #f1f5f8;
+$grey-9: #3d4852;
+$grey-8: #485561;
+$grey-7: #58636F; 
+$grey-6: #5e6c78;
+$grey-5: #677783;
+$grey-4: #9AACB6;
+$grey-3: #bac6d3;
+$grey-2: #dae1e7;
+$grey-1: #f1f5f8;
 
-// $color-text: $grey-900;
-// $color-link: $color-primary;
-// $color-link-hover: $color-primary-lighter;
-// $color-link-visited: $color-primary-darker;
+$orange-9: #7c2d12;
+$orange-8: #9b3412;
+$orange-7: #c03f0c;
+$orange-6: #e9590c;
+$orange-5: #f97415;
+$orange-4: #ff914d;
+$orange-3: #fdba72;
+$orange-2: #fed7aa;
+$orange-1: #ffedd5;
+$orange-0: #fff7ed;
 
+$xs: 375px;
 $sm: 576px;
 $md: 768px;
 $lg: 992px;
 $xl: 1280px;
 $xxl:1600px;
+$content: 900px;
 
 $main-font: 'Mulish', 'system-ui', 'BlinkMacSystemFont', '-apple-system', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'sans-serif';
 $mono-font: 'Oxygen Mono', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', 'monospace';
@@ -45,32 +55,8 @@ $sp-2xl: 4rem;
 $sp-3xl: 6rem;
 $sp-4xl: 8rem;
 
-// Gallery columns templates
-@mixin gallery-columns() {
-    .gallery-columns-1 {
-	    grid-template-columns: 1fr;
-    }
-    .gallery-columns-2 {
-	    grid-template-columns: 1fr 1fr;
-    }
-    .gallery-columns-3 {
-        grid-template-columns: 1fr 1fr;
-        @media screen and (min-width: $sm){
-            grid-template-columns: repeat( 3, 1fr );
-        }
-    }
-    @for $i from 4 through 9 {
-        .gallery-columns-#{$i}{
-            grid-template-columns: repeat( 2, 1fr );
-            @media screen and (min-width: $sm){
-                grid-template-columns: repeat( 3, 1fr );
-            }
-            @media screen and (min-width: $md){
-                grid-template-columns: repeat( 4, 1fr );
-            }
-            @media screen and (min-width: $lg){
-                grid-template-columns: repeat( #{$i}, 1fr );
-            }
-        }
-    }
-}
+$greys: (grey-1: $grey-1, grey-2: $grey-2, grey-3: $grey-3, grey-4: $grey-4, grey-5: $grey-5, grey-6: $grey-6, grey-7: $grey-7, grey-8: $grey-8, grey-9: $grey-9);
+$oranges: (orange-1: $orange-1, orange-2: $orange-2, orange-3: $orange-3, orange-4: $orange-4, orange-5: $orange-5, orange-6: $orange-6, orange-7: $orange-7, orange-8: $orange-8, orange-9: $orange-9);
+$spacings: (0: 0, 4xs: $sp-4xs, 3xs: $sp-3xs, 2xs: $sp-2xs, xs: $sp-xs, sm: $sp-sm, md: $sp-md, lg: $sp-lg, xl: $sp-xl, 2xl: $sp-2xl, 3xl: $sp-3xl, 4xl: $sp-4xl, auto: auto);
+$text-sizes: (2xs: $txt-2xs, xs: $txt-xs, sm: $txt-sm, md: $txt-md, lg: $txt-lg, xl: $txt-xl, 2xl: $txt-2xl, 3xl: $txt-3xl, 4xl: $txt-4xl, 5xl: $txt-5xl, 6xl: $txt-6xl);
+$widths: (none: none, xs: $xs, sm:$sm, md:$md, lg:$lg, xl:$xl, xxl:$xxl);

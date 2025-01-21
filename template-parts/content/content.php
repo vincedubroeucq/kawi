@@ -20,7 +20,7 @@
 							<?php kawi_post_meta(); ?>
 						</div><!-- .post-meta -->
 					<?php endif; ?>
-					<?php the_title( '<h2 class="post-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' ); ?>
+					<?php the_title( '<h2 class="post-title h4 my-sm"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' ); ?>
 				</div>
 			</header><!-- .post-header -->
 		<?php endif; ?>

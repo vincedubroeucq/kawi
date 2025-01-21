@@ -28,7 +28,7 @@ input,
 select, 
 optgroup,
 textarea {
-	color: $grey-900;
+	color: $grey-9;
 	font-family: $main-font;
 	font-weight: 400;
 	font-size: $txt-md;
@@ -55,8 +55,8 @@ q {
 }
 
 pre {
-	background-color: $grey-100;
-	border-left: 8px solid $grey-900;
+	background-color: $grey-1;
+	border-left: 8px solid $grey-9;
 	border-radius: 4px;
 	font-family: $mono-font;
 	font-size: $txt-md;
@@ -75,7 +75,7 @@ abbr, acronym {
 }
 
 mark {
-	background-color: $grey-900;
+	background-color: $grey-9;
 	color: #fff;
 	text-decoration: none;
 }
@@ -150,16 +150,16 @@ a {
 	color: inherit;
 	transition: .25s all ease-in-out;
 	&:visited {
-		color: $grey-900;
+		color: $grey-9;
 	}
 	&:hover,
 	&:focus,
 	&:active {
-		background-color: $grey-900;
+		background-color: $grey-9;
 		color: white;
 	}
 	&:focus {
-		outline: thin solid $grey-900;
+		outline: thin solid $grey-9;
 	}
 	&:hover,
 	&:active {
@@ -172,7 +172,7 @@ blockquote {
 	background-position: top right;
 	background-repeat: no-repeat;
 	background-size: 1.5rem;
-	border-left: 8px solid $grey-900;
+	border-left: 8px solid $grey-9;
 	font-size: 1.125em;
 	margin: $sp-md 0;
 	padding: $sp-lg;

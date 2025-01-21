@@ -1,0 +1,107 @@
+@mixin helper( $property, $prefix, $map, $breakpoints_map: false ) {
+    @each $key, $value in $map {
+        .#{$prefix}#{$key}{
+            #{$property}: #{$value};
+        }
+    }
+    @if $breakpoints_map {
+        @each $size, $breakpoint in $breakpoints_map {
+            @media (min-width: $breakpoint){
+                @each $key, $value in $map {
+                    .#{$size}\:#{$prefix}#{$key}{
+                        #{$property}: #{$value};
+                    }
+                }
+            }
+        }
+    }
+}
+
+@mixin spacing-helper( $property, $prefix, $map, $breakpoints_map: false ) {
+    @each $key, $value in $map {
+        .#{$prefix}-#{$key} {
+            #{$property}: #{$value};
+        }
+        .#{$prefix}b-#{$key} {
+            #{$property}-bottom: #{$value};
+        }
+        .#{$prefix}l-#{$key} {
+            #{$property}-left: #{$value};
+        }
+        .#{$prefix}r-#{$key} {
+            #{$property}-right: #{$value};
+        }
+        .#{$prefix}t-#{$key} {
+            #{$property}-top: #{$value};
+        }
+        .#{$prefix}x-#{$key} {
+            #{$property}-left: #{$value};
+            #{$property}-right: #{$value};
+        }
+        .#{$prefix}y-#{$key} {
+            #{$property}-bottom: #{$value};
+            #{$property}-top: #{$value};
+        }
+    }
+    @if $breakpoints_map {
+        @each $size, $breakpoint in $breakpoints_map {
+            @media (min-width: $breakpoint){
+                @each $key, $value in $map {
+                    .#{$size}\:#{$prefix}-#{$key} {
+                        #{$property}: #{$value};
+                    }
+                    .#{$size}\:#{$prefix}b-#{$key} {
+                        #{$property}-bottom: #{$value};
+                    }
+                    .#{$size}\:#{$prefix}l-#{$key} {
+                        #{$property}-left: #{$value};
+                    }
+                    .#{$size}\:#{$prefix}r-#{$key} {
+                        #{$property}-right: #{$value};
+                    }
+                    .#{$size}\:#{$prefix}t-#{$key} {
+                        #{$property}-top: #{$value};
+                    }
+                    .#{$size}\:#{$prefix}x-#{$key} {
+                        #{$property}-left: #{$value};
+                        #{$property}-right: #{$value};
+                    }
+                    .#{$size}\:#{$prefix}y-#{$key} {
+                        #{$property}-bottom: #{$value};
+                        #{$property}-top: #{$value};
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Gallery columns templates
+@mixin gallery-columns() {
+    .gallery-columns-1 {
+	    grid-template-columns: 1fr;
+    }
+    .gallery-columns-2 {
+	    grid-template-columns: 1fr 1fr;
+    }
+    .gallery-columns-3 {
+        grid-template-columns: 1fr 1fr;
+        @media screen and (min-width: $sm){
+            grid-template-columns: repeat( 3, 1fr );
+        }
+    }
+    @for $i from 4 through 9 {
+        .gallery-columns-#{$i}{
+            grid-template-columns: repeat( 2, 1fr );
+            @media screen and (min-width: $sm){
+                grid-template-columns: repeat( 3, 1fr );
+            }
+            @media screen and (min-width: $md){
+                grid-template-columns: repeat( 4, 1fr );
+            }
+            @media screen and (min-width: $lg){
+                grid-template-columns: repeat( #{$i}, 1fr );
+            }
+        }
+    }
+}

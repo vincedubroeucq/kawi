@@ -57,10 +57,7 @@
     max-width: $md;
     margin: 0 auto;
     @media screen and (min-width: $lg) {
-        max-width: 850px;
-    }
-    @media screen and (min-width: $xl) {
-        max-width: $lg;
+        max-width: $content;
     }
 }
 
@@ -75,15 +72,15 @@
 .no-results,
 .error-404 {
     background-color: #fff;
-    border-top: 8px solid $grey-900;
-    padding: $sp-sm;
+    border: 1px solid $grey-2;
+    border-top: 8px solid $grey-9;
+    padding: $sp-md;
     margin-bottom: $sp-xl;
-    @media screen and (min-width: $lg){
-        padding: $sp-md;
-    }
 }
 
-.single .hentry {
+.single .hentry,
+.page.hentry {
+    border: none;
 	margin-bottom: 0;
 }
 
@@ -111,7 +108,7 @@
 }
 
 .post-meta {
-    color: $grey-500;
+    color: $grey-5;
     font-size: $txt-xs;
     margin: 0;
     a {
@@ -156,7 +153,7 @@
 
 .small-thumbnail {
     border-top: none;
-    border-left: 8px solid $grey-900;
+    border-left: 8px solid $grey-9;
 
     .post-header {
         align-items: center;
@@ -210,9 +207,9 @@
 }
 
 .post-footer {
-    border-top: 1px solid $grey-200;
+    border-top: 1px solid $grey-2;
     clear: both;
-    color: $grey-500;
+    color: $grey-5;
     font-size: $txt-xs;
     padding:  $sp-sm 0; 
     @media screen and ( min-width: $sm ) {
@@ -248,7 +245,7 @@
 }
 
 .sticky {
-    background-color: $grey-900;
+    background-color: $grey-9;
     color: white;
     .post-meta,
     .post-footer, 
@@ -257,7 +254,7 @@
     }
     a:hover, a:focus {
         background-color: white;
-        color: $grey-900;
+        color: $grey-9;
     }
 }
 
