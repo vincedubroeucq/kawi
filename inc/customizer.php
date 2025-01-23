@@ -238,7 +238,7 @@ function kawi_head_styles(){
 		$filter   = '';
 		switch ( get_theme_mod( 'kawi_header_image_filter', 'raw-image' ) ) {
 			case 'dark-filter':
-				$filter = 'linear-gradient( rgba( 0, 0, 0, 0.4 ), rgba( 0, 0, 0, 0.4 ) ), ';
+				$filter = 'linear-gradient( rgba( 0, 0, 0, 0.6 ), rgba( 0, 0, 0, 0.6 ) ), ';
 				break;
 			case 'light-filter':
 				$filter = 'linear-gradient( rgba( 255, 255, 255, 0.75 ), rgba( 255, 255, 255, 0.75 ) ), ';
