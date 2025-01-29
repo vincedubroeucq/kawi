@@ -2,8 +2,8 @@
 Contributors: vincentdubroeucq, audrasjb, sebastienserre
 Requires PHP: 7.4
 Requires at least: 5.0
-Tested up to: 6.4.2
-Stable tag: 1.3.0
+Tested up to: 6.7.1
+Stable tag: 1.4.0
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Tags: blog, custom-background, one-column, two-columns, left-sidebar, right-sidebar, custom-logo, custom-menu, featured-images, featured-image-header, flexible-header, footer-widgets, full-width-template, sticky-post, theme_options, threaded-comments, translation-ready, accessibility-ready
