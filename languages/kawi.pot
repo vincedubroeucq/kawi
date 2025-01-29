@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-01-29T10:41:58+00:00\n"
+"POT-Creation-Date: 2025-01-29T10:47:57+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: kawi\n"
@@ -17,6 +17,11 @@ msgstr ""
 #. Theme Name of the theme
 #: style.css
 msgid "Kawi"
+msgstr ""
+
+#. Theme URI of the theme
+#: style.css
+msgid "https://wordpress.org/themes/kawi"
 msgstr ""
 
 #. Description of the theme
@@ -98,85 +103,85 @@ msgstr ""
 msgid "Footer social icons"
 msgstr ""
 
-#: functions.php:121
+#: functions.php:124
 msgid "Small"
 msgstr ""
 
-#: functions.php:126
+#: functions.php:129
 msgid "Normal"
 msgstr ""
 
-#: functions.php:131
+#: functions.php:134
 msgid "Lead"
 msgstr ""
 
-#: functions.php:136
+#: functions.php:139
 msgid "Large"
 msgstr ""
 
-#: functions.php:141
+#: functions.php:144
 msgid "Very Large"
 msgstr ""
 
-#: functions.php:146
+#: functions.php:149
 msgid "Huge"
 msgstr ""
 
-#: functions.php:153
+#: functions.php:156
 msgid "Darkest grey"
 msgstr ""
 
-#: functions.php:158
+#: functions.php:161
 msgid "Dark grey"
 msgstr ""
 
-#: functions.php:163
+#: functions.php:166
 msgid "Grey"
 msgstr ""
 
-#: functions.php:168
+#: functions.php:171
 msgid "Light grey"
 msgstr ""
 
-#: functions.php:173
+#: functions.php:176
 msgid "Lightest grey"
 msgstr ""
 
-#: functions.php:190
+#: functions.php:193
 msgid "Full screen header image size"
 msgstr ""
 
-#: functions.php:191
+#: functions.php:194
 msgid "Boxed header image size"
 msgstr ""
 
-#: functions.php:192
+#: functions.php:195
 msgid "Featured image size on listing pages"
 msgstr ""
 
-#: functions.php:193
+#: functions.php:196
 msgid "Smaller featured image size"
 msgstr ""
 
 #. Translators: If there are characters in your language that are not supported by Muli, translate this to 'off'. Do not translate into your own language.
-#: functions.php:208
+#: functions.php:211
 msgctxt "Muli font: on or off"
 msgid "on"
 msgstr ""
 
-#: functions.php:247
+#: functions.php:250
 msgid "Main widget area"
 msgstr ""
 
-#: functions.php:249
+#: functions.php:252
 msgid "Widgets added here will appear in a widget area you can place on the left, right or bottom via a setting in the customizer. If no widgets are added, a one column layout will be used for all pages and posts."
 msgstr ""
 
-#: functions.php:256
+#: functions.php:259
 msgid "Footer widget area"
 msgstr ""
 
-#: functions.php:258
+#: functions.php:261
 msgid "Widgets added here will appear just before the footer."
 msgstr ""
 

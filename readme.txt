@@ -2,7 +2,7 @@
 Contributors: vincentdubroeucq, audrasjb, sebastienserre
 Requires PHP: 7.4
 Requires at least: 5.0
-Tested up to: 6.7.1
+Tested up to: 6.7
 Stable tag: 1.4.0
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
