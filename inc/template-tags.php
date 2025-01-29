@@ -408,22 +408,26 @@ if ( ! function_exists( 'kawi_post_content' ) ) :
  */
 function kawi_post_content() {
 	$content_setting = get_theme_mod( 'kawi_content_setting', 'full-content' );
-	
-	switch ( $content_setting ) {
-		case 'no-content':
-			break;
-		
-		case 'excerpt':
-			the_excerpt();
-			kawi_read_more_link();
-			break;
 
-		default:
-			the_content( kawi_read_more_text() );
-			if( is_home() && 'excerpt' === get_option( 'jetpack_content_blog_display' ) ){
+	if( is_singular() ){
+		the_content();
+	} else {
+		switch ( $content_setting ) {
+			case 'no-content':
+				break;
+			
+			case 'excerpt':
+				the_excerpt();
 				kawi_read_more_link();
-			}
-			break;
+				break;
+	
+			default:
+				the_content( kawi_read_more_text() );
+				if( 'excerpt' === get_option( 'jetpack_content_blog_display' ) ){
+					kawi_read_more_link();
+				}
+				break;
+		}
 	}
 }
 endif;

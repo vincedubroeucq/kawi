@@ -2,14 +2,14 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Kawi 1.4.0\n"
+"Project-Id-Version: Kawi 1.4.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/kawi\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-01-29T10:47:57+00:00\n"
+"POT-Creation-Date: 2025-01-29T14:07:13+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: kawi\n"
@@ -253,31 +253,47 @@ msgstr ""
 msgid "Large featured image"
 msgstr ""
 
-#: inc/customizer.php:126
-msgid "Widget area position"
+#: inc/customizer.php:125
+msgid "Content to display on post list views"
+msgstr ""
+
+#: inc/customizer.php:128
+msgid "No content"
+msgstr ""
+
+#: inc/customizer.php:129
+msgid "Excerpt"
 msgstr ""
 
 #: inc/customizer.php:130
+msgid "Full content"
+msgstr ""
+
+#: inc/customizer.php:140
+msgid "Widget area position"
+msgstr ""
+
+#: inc/customizer.php:144
 msgid "Widget area on the left"
 msgstr ""
 
-#: inc/customizer.php:131
+#: inc/customizer.php:145
 msgid "Widget area on the right"
 msgstr ""
 
-#: inc/customizer.php:132
+#: inc/customizer.php:146
 msgid "Widget area below content"
 msgstr ""
 
-#: inc/customizer.php:141
+#: inc/customizer.php:155
 msgid "Title to display on front page"
 msgstr ""
 
-#: inc/customizer.php:145
+#: inc/customizer.php:159
 msgid "Display site title"
 msgstr ""
 
-#: inc/customizer.php:146
+#: inc/customizer.php:160
 msgid "Display page title"
 msgstr ""
 
@@ -350,23 +366,23 @@ msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr ""
 
 #. translators: %s: Name of current post. Only visible to screen readers
-#: inc/template-tags.php:451
+#: inc/template-tags.php:455
 msgid "Continue reading <span class=\"screen-reader-text\">\"%s\"</span>"
 msgstr ""
 
-#: inc/template-tags.php:473
+#: inc/template-tags.php:477
 msgid "Previous posts"
 msgstr ""
 
-#: inc/template-tags.php:474
+#: inc/template-tags.php:478
 msgid "Next posts"
 msgstr ""
 
-#: inc/template-tags.php:498
+#: inc/template-tags.php:502
 msgid "Older comments"
 msgstr ""
 
-#: inc/template-tags.php:499
+#: inc/template-tags.php:503
 msgid "Newer comments"
 msgstr ""
 

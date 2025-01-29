@@ -117,6 +117,20 @@ function kawi_get_customizer_settings() {
 				],
 			]
 		],
+		'kawi_content_setting' => [
+			'default' => 'excerpt',
+			'sanitize_callback' => 'kawi_validate_choice',
+			'control' => [
+				'type' => 'radio',
+				'label' => __( 'Content to display on post list views', 'kawi' ),
+				'section' => 'layout',
+				'choices' => [
+					'no-content'   => __( 'No content', 'kawi' ),
+					'excerpt'      => __( 'Excerpt', 'kawi' ),
+					'full-content' => __( 'Full content', 'kawi' ),
+				],
+			]
+		],
 		'kawi_sidebar_position' => [
 			'default'   => 'sidebar-right',
 			'transport' => 'postMessage',
