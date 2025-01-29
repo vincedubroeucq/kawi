@@ -83,6 +83,9 @@ if ( ! function_exists( 'kawi_setup' ) ) :
 			
 		// Add theme support for selective refresh for widgets.
 		add_theme_support( 'customize-selective-refresh-widgets' );
+		
+		// Add theme support for responsive embeds.
+		add_theme_support( 'responsive-embeds' );
 			
 		/**
 		 * Add support for core custom logo.
