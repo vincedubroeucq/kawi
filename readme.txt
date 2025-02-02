@@ -3,7 +3,7 @@ Contributors: vincentdubroeucq, audrasjb, sebastienserre
 Requires PHP: 7.4
 Requires at least: 5.0
 Tested up to: 6.7
-Stable tag: 1.4.0
+Stable tag: 1.4.2
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Tags: blog, custom-background, one-column, two-columns, left-sidebar, right-sidebar, custom-logo, custom-menu, featured-images, featured-image-header, flexible-header, footer-widgets, full-width-template, sticky-post, theme_options, threaded-comments, translation-ready, accessibility-ready
@@ -67,6 +67,11 @@ The theme offers simple support for the built-in blocks of the new WordPress edi
 Kawi includes support for Infinite Scroll and basic content options in Jetpack.
 
 == Changelog ==
+
+= 1.4.2 - February 2025 =
+* Added display setting for blog page
+* Added missing theme supports
+* Fixed thumbnail display on blog template
 
 = 1.2.0 - November 2020 =
 * Fixed JavaScript error

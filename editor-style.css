@@ -563,20 +563,21 @@ object {
 }
 
 .content-wrapper {
-  grid-auto-flow: row dense;
+  background-color: white;
   max-width: 768px;
   margin: 0 auto;
 }
 @media screen and (min-width: 992px) {
   .content-wrapper {
-    max-width: 900px;
     display: grid;
+    max-width: 900px;
   }
 }
 @media screen and (min-width: 992px) {
   .content-wrapper.posts-grid {
     display: grid;
     gap: 3rem;
+    grid-auto-flow: row dense;
     grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
     max-width: 1280px;
   }
@@ -651,7 +652,8 @@ object {
   margin-bottom: 0;
 }
 
-.single-post .content-wrapper, .page .content-wrapper {
+.single-post .content-wrapper,
+.page .content-wrapper {
   border-top: 8px solid #3d4852;
 }
 
@@ -827,7 +829,8 @@ object {
 .sticky a:visited {
   color: white;
 }
-.sticky a:hover, .sticky a:focus {
+.sticky a:hover,
+.sticky a:focus {
   background-color: white;
   color: #3d4852;
 }

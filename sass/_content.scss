@@ -11,20 +11,23 @@
 }
 
 .content-wrapper {
-    grid-auto-flow: row dense;
+    background-color: white;
     max-width: $md;
     margin: 0 auto;
+
     @media screen and (min-width: $lg) {
-        max-width: $content;
         display: grid;
+        max-width: $content;
     }
 
     &.posts-grid {
         @media screen and (min-width: $lg) {
             display: grid;
             gap: $sp-xl;
+            grid-auto-flow: row dense;
             grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
             max-width: $xl;
+
             .post {
                 margin-bottom: 0;
             }
@@ -38,28 +41,30 @@
 .single.sidebar-bottom.header-background .content-area,
 .page.hero-background .content-area,
 .page.header-background .content-area {
-    @media screen and (min-width: $lg){
+    @media screen and (min-width: $lg) {
         margin-top: -100px;
         z-index: 100;
     }
-    @media screen and (min-width: $xl){
+
+    @media screen and (min-width: $xl) {
         margin-top: -150px;
     }
-} 
+}
 
 .sidebar-left .content-area,
 .sidebar-right .content-area {
-    @media screen and (min-width: $lg){
+    @media screen and (min-width: $lg) {
         display: grid;
         grid-auto-flow: row dense;
     }
-    @media screen and (min-width: $xl){
-        grid-gap: $sp-xl; 
+
+    @media screen and (min-width: $xl) {
+        grid-gap: $sp-xl;
     }
 }
 
 .sidebar-right .content-area {
-    @media screen and (min-width: $lg){
+    @media screen and (min-width: $lg) {
         grid-template-columns: minmax(0, 2fr) 1fr;
     }
 }
@@ -68,8 +73,9 @@
     .content-area {
         grid-template-columns: 1fr minmax(0, 2fr);
     }
+
     .main-content {
-        @media screen and (min-width: $lg){
+        @media screen and (min-width: $lg) {
             grid-column-start: 2;
         }
     }
@@ -87,10 +93,11 @@
 
 .single .post {
     border: none;
-	margin-bottom: 0;
+    margin-bottom: 0;
 }
 
-.single-post, .page {
+.single-post,
+.page {
     .content-wrapper {
         border-top: 8px solid $grey-9;
     }
@@ -99,6 +106,7 @@
 .post-thumbnail {
     display: block;
     margin: #{-$sp-md} #{-$sp-md} #{$sp-md} #{-$sp-md};
+
     img {
         display: block;
         margin: 0 auto;
@@ -108,9 +116,11 @@
 .post-title {
     margin-top: 0;
     word-break: break-word;
+
     a {
         text-decoration: none;
     }
+
     @media screen and (max-width: $sm) {
         font-size: $txt-xl;
     }
@@ -120,8 +130,10 @@
     color: $grey-5;
     font-size: $txt-xs;
     margin: 0;
+
     a {
         color: inherit;
+
         &:hover,
         &:focus {
             color: white;
@@ -134,6 +146,7 @@
     display: inline-flex;
     flex-wrap: wrap;
     margin-right: $sp-sm;
+
     .icon {
         margin-right: $sp-2xs;
     }
@@ -173,21 +186,27 @@
         flex-basis: 75px;
         flex-shrink: 0;
         margin: 0 $sp-sm 0 0;
+
         img {
             display: block;
             max-width: 75px;
         }
-        @media screen and (min-width: $md){
+
+        @media screen and (min-width: $md) {
             flex-basis: 100px;
+
             img {
                 max-width: 100px;
             }
         }
-        @media screen and (min-width: $lg){
+
+        @media screen and (min-width: $lg) {
             margin-right: $sp-md;
         }
-        @media screen and (min-width: $xl){
+
+        @media screen and (min-width: $xl) {
             flex-basis: 150px;
+
             img {
                 max-width: 150px;
             }
@@ -199,6 +218,7 @@
     .post-header {
         margin-bottom: $sp-md;
     }
+
     .post-title {
         margin: 0;
     }
@@ -212,7 +232,7 @@
     display: inline-block;
     font-size: $txt-sm;
     margin-bottom: $sp-md;
-	text-transform: uppercase;
+    text-transform: uppercase;
 }
 
 .post-footer {
@@ -220,8 +240,9 @@
     clear: both;
     color: $grey-5;
     font-size: $txt-xs;
-    padding:  $sp-sm 0; 
-    @media screen and ( min-width: $sm ) {
+    padding: $sp-sm 0;
+
+    @media screen and (min-width: $sm ) {
         align-items: center;
         display: flex;
         flex-wrap: wrap;
@@ -244,6 +265,7 @@
 .reply-link {
     align-items: center;
     display: flex;
+
     .icon {
         margin-right: $sp-2xs;
     }
@@ -256,12 +278,15 @@
 .sticky {
     background-color: $grey-9;
     color: white;
+
     .post-meta,
-    .post-footer, 
+    .post-footer,
     a:visited {
         color: white;
     }
-    a:hover, a:focus {
+
+    a:hover,
+    a:focus {
         background-color: white;
         color: $grey-9;
     }
