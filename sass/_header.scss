@@ -411,6 +411,10 @@
 
         .main-meta {
             opacity: 0.9;
+
+            a:visited {
+                color: #fff;
+            }
         }
     }
 }

@@ -1,7 +1,7 @@
 $black: #22292f;
 $grey-9: #3d4852;
 $grey-8: #485561;
-$grey-7: #58636F; 
+$grey-7: #58636F;
 $grey-6: #5e6c78;
 $grey-5: #677783;
 $grey-4: #9AACB6;
@@ -25,26 +25,26 @@ $sm: 576px;
 $md: 768px;
 $lg: 992px;
 $xl: 1280px;
-$xxl:1600px;
-$content: 900px;
+$xxl: 1600px;
+$content: 800px;
 
 $main-font: 'Mulish', 'system-ui', 'BlinkMacSystemFont', '-apple-system', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'sans-serif';
 $mono-font: 'Oxygen Mono', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', 'monospace';
 
-$txt-2xs: .6875rem;  // 11px
-$txt-xs:  .75rem;    // 12px
-$txt-sm:  .875rem;   // 14px
-$txt-md:  1rem;      // 16px
-$txt-lg:  1.125rem;  // 18px
-$txt-xl:  1.25rem;   // 20px
-$txt-2xl: 1.5rem;    // 24px
-$txt-3xl: 1.75rem;   // 28px
-$txt-4xl: 2rem;      // 32px
-$txt-5xl: 2.75rem;   // 44px
-$txt-6xl: 4rem;      // 64px
+$txt-2xs: .6875rem; // 11px
+$txt-xs: .75rem; // 12px
+$txt-sm: .875rem; // 14px
+$txt-md: 1rem; // 16px
+$txt-lg: 1.125rem; // 18px
+$txt-xl: 1.25rem; // 20px
+$txt-2xl: 1.5rem; // 24px
+$txt-3xl: 1.75rem; // 28px
+$txt-4xl: 2rem; // 32px
+$txt-5xl: 2.75rem; // 44px
+$txt-6xl: 4rem; // 64px
 
 $sp-4xs: .125rem;
-$sp-3xs: .25rem; 
+$sp-3xs: .25rem;
 $sp-2xs: .5rem;
 $sp-xs: .75rem;
 $sp-sm: 1rem;
@@ -55,8 +55,62 @@ $sp-2xl: 4rem;
 $sp-3xl: 6rem;
 $sp-4xl: 8rem;
 
-$greys: (grey-1: $grey-1, grey-2: $grey-2, grey-3: $grey-3, grey-4: $grey-4, grey-5: $grey-5, grey-6: $grey-6, grey-7: $grey-7, grey-8: $grey-8, grey-9: $grey-9);
-$oranges: (orange-1: $orange-1, orange-2: $orange-2, orange-3: $orange-3, orange-4: $orange-4, orange-5: $orange-5, orange-6: $orange-6, orange-7: $orange-7, orange-8: $orange-8, orange-9: $orange-9);
-$spacings: (0: 0, 4xs: $sp-4xs, 3xs: $sp-3xs, 2xs: $sp-2xs, xs: $sp-xs, sm: $sp-sm, md: $sp-md, lg: $sp-lg, xl: $sp-xl, 2xl: $sp-2xl, 3xl: $sp-3xl, 4xl: $sp-4xl, auto: auto);
-$text-sizes: (2xs: $txt-2xs, xs: $txt-xs, sm: $txt-sm, md: $txt-md, lg: $txt-lg, xl: $txt-xl, 2xl: $txt-2xl, 3xl: $txt-3xl, 4xl: $txt-4xl, 5xl: $txt-5xl, 6xl: $txt-6xl);
-$widths: (none: none, xs: $xs, sm:$sm, md:$md, lg:$lg, xl:$xl, xxl:$xxl);
+$greys: (
+    grey-1: $grey-1,
+    grey-2: $grey-2,
+    grey-3: $grey-3,
+    grey-4: $grey-4,
+    grey-5: $grey-5,
+    grey-6: $grey-6,
+    grey-7: $grey-7,
+    grey-8: $grey-8,
+    grey-9: $grey-9
+);
+$oranges: (
+    orange-1: $orange-1,
+    orange-2: $orange-2,
+    orange-3: $orange-3,
+    orange-4: $orange-4,
+    orange-5: $orange-5,
+    orange-6: $orange-6,
+    orange-7: $orange-7,
+    orange-8: $orange-8,
+    orange-9: $orange-9
+);
+$spacings: (
+    0: 0,
+    4xs: $sp-4xs,
+    3xs: $sp-3xs,
+    2xs: $sp-2xs,
+    xs: $sp-xs,
+    sm: $sp-sm,
+    md: $sp-md,
+    lg: $sp-lg,
+    xl: $sp-xl,
+    2xl: $sp-2xl,
+    3xl: $sp-3xl,
+    4xl: $sp-4xl,
+    auto: auto
+);
+$text-sizes: (
+    2xs: $txt-2xs,
+    xs: $txt-xs,
+    sm: $txt-sm,
+    md: $txt-md,
+    lg: $txt-lg,
+    xl: $txt-xl,
+    2xl: $txt-2xl,
+    3xl: $txt-3xl,
+    4xl: $txt-4xl,
+    5xl: $txt-5xl,
+    6xl: $txt-6xl
+);
+$widths: (
+    none: none,
+    xs: $xs,
+    sm:$sm,
+    md:$md,
+    lg:$lg,
+    xl:$xl,
+    xxl:$xxl
+);
