@@ -14,7 +14,7 @@
         <?php kawi_site_branding(); ?>
         <nav id="site-navigation" class="main-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Primary Navigation', 'kawi' ); ?>">
             <?php kawi_menu_button(); ?>
-            <div id="menu-area" class="menu-area sidebar-menu-area" aria-expanded="false">
+            <div id="menu-area" class="menu-area sidebar-menu-area">
                 <div class="menu-section menu-header">
                     <span class="menu-title"><?php esc_html_e( 'Menu', 'kawi' )?></span>
                     <?php kawi_menu_button( 'close' ); ?>
