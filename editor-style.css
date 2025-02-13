@@ -569,7 +569,6 @@ object {
 }
 @media screen and (min-width: 992px) {
   .content-wrapper {
-    display: grid;
     max-width: 800px;
   }
 }

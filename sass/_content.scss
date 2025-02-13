@@ -16,7 +16,6 @@
     margin: 0 auto;
 
     @media screen and (min-width: $lg) {
-        display: grid;
         max-width: $content;
     }
 
