@@ -69,9 +69,7 @@ Kawi includes support for Infinite Scroll and basic content options in Jetpack.
 == Changelog ==
 
 = 1.4.3 - February 2025 =
-* Added display setting for blog page
-* Added missing theme supports
-* Fixed thumbnail display on blog template
+* CSS fixes
 
 = 1.4.2 - February 2025 =
 * Added display setting for blog page
