@@ -68,6 +68,9 @@ Kawi includes support for Infinite Scroll and basic content options in Jetpack.
 
 == Changelog ==
 
+= 1.4.4 =
+* Added orange colors to palette 
+
 = 1.4.3 - February 2025 =
 * CSS fixes
 

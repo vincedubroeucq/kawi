@@ -177,6 +177,31 @@ if ( ! function_exists( 'kawi_setup' ) ) :
 				'slug'  => 'lightest-grey',
 				'color' => '#f1f5f8',
 			),
+			array(
+				'name'  => __( 'Darkest orange', 'kawi' ),
+				'slug'  => 'darkest-orange',
+				'color' => '#7c2d12',
+			),
+			array(
+				'name'  => __( 'Dark orange', 'kawi' ),
+				'slug'  => 'dark-orange',
+				'color' => '#c03f0c',
+			),
+			array(
+				'name'  => __( 'orange', 'kawi' ),
+				'slug'  => 'orange',
+				'color' => '#f97415',
+			),
+			array(
+				'name'  => __( 'Light orange', 'kawi' ),
+				'slug'  => 'light-orange',
+				'color' => '#fdba72',
+			),
+			array(
+				'name'  => __( 'Lightest orange', 'kawi' ),
+				'slug'  => 'lightest-orange',
+				'color' => '#fff7ed',
+			),
 		) );
 	}
 endif;
