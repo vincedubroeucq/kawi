@@ -738,6 +738,7 @@ input[type=submit] {
   color: white;
   cursor: pointer;
   display: inline-flex;
+  flex-wrap: wrap;
   padding: 0.25rem 0.75rem;
   text-decoration: none;
   transition: all 0.25s ease-in-out;

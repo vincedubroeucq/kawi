@@ -10,11 +10,11 @@ select {
     max-width: 100%;
     padding: $sp-3xs $sp-xs;
     transition: all .25s ease-in-out;
-    
+
     &::placeholder {
         color: $grey-5;
     }
-    
+
     &:hover,
     &:focus {
         background-color: $grey-2;
@@ -41,10 +41,11 @@ input[type="submit"] {
     color: white;
     cursor: pointer;
     display: inline-flex;
+    flex-wrap: wrap;
     padding: $sp-3xs $sp-xs;
     text-decoration: none;
     transition: all .25s ease-in-out;
-        
+
     &:hover,
     &:focus {
         background-color: $grey-7;
@@ -58,7 +59,7 @@ input[type="submit"] {
     &:visited {
         color: #fff;
     }
-    
+
     &.button-secondary {
         background-color: transparent;
         border-color: $grey-9;
@@ -87,7 +88,7 @@ input[type="submit"] {
 }
 
 input[type="checkbox"],
-input[type="radio"]{
+input[type="radio"] {
     margin: 0 $sp-3xs;
 }
 
