@@ -188,6 +188,11 @@ if ( ! function_exists( 'kawi_setup' ) ) :
 				'color' => '#c03f0c',
 			),
 			array(
+				'name'  => __( 'Darker orange', 'kawi' ),
+				'slug'  => 'darker-orange',
+				'color' => '#ea5a0c',
+			),
+			array(
 				'name'  => __( 'orange', 'kawi' ),
 				'slug'  => 'orange',
 				'color' => '#f97415',
