@@ -54,10 +54,8 @@ Screenshot image from StockSnap.io (https: //stocksnap.io/photo/AAJD6NGTZE) Lice
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 html {
-  line-height: 1.15;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
 }
 
 /* Sections
@@ -85,12 +83,9 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  box-sizing: content-box;
-  /* 1 */
-  height: 0;
-  /* 1 */
-  overflow: visible;
-  /* 2 */
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
 }
 
 /**
@@ -98,10 +93,8 @@ hr {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 pre {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /* Text-level semantics
@@ -118,12 +111,9 @@ a {
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
 abbr[title] {
-  border-bottom: none;
-  /* 1 */
-  text-decoration: underline;
-  /* 2 */
-  text-decoration: underline dotted;
-  /* 2 */
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -141,10 +131,8 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /**
@@ -194,14 +182,10 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
-  margin: 0;
-  /* 2 */
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
 }
 
 /**
@@ -209,8 +193,7 @@ textarea {
  * 1. Show the overflow in Edge.
  */
 button,
-input {
-  /* 1 */
+input { /* 1 */
   overflow: visible;
 }
 
@@ -219,8 +202,7 @@ input {
  * 1. Remove the inheritance of text transform in Firefox.
  */
 button,
-select {
-  /* 1 */
+select { /* 1 */
   text-transform: none;
 }
 
@@ -269,18 +251,12 @@ fieldset {
  *		`fieldset` elements in all browsers.
  */
 legend {
-  box-sizing: border-box;
-  /* 1 */
-  color: inherit;
-  /* 2 */
-  display: table;
-  /* 1 */
-  max-width: 100%;
-  /* 1 */
-  padding: 0;
-  /* 3 */
-  white-space: normal;
-  /* 1 */
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
 }
 
 /**
@@ -303,10 +279,8 @@ textarea {
  */
 [type=checkbox],
 [type=radio] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
 }
 
 /**
@@ -322,10 +296,8 @@ textarea {
  * 2. Correct the outline style in Safari.
  */
 [type=search] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
 }
 
 /**
@@ -340,10 +312,8 @@ textarea {
  * 2. Change font properties to `inherit` in Safari.
  */
 ::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
 }
 
 /* Interactive
@@ -385,18 +355,21 @@ template {
   font-family: "Mulish";
   font-style: normal;
   font-weight: 300 900;
+  font-display: swap;
   src: url("./fonts/mulish/mulish.ttf") format("truetype");
 }
 @font-face {
   font-family: "Mulish";
   font-style: italic;
   font-weight: 300 900;
+  font-display: swap;
   src: url("./fonts/mulish/mulish-italic.ttf") format("truetype");
 }
 @font-face {
   font-family: "Oxygen Mono";
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: url("./fonts/oxygen-mono/oxygen-mono.ttf") format("truetype");
 }
 body,
@@ -413,30 +386,36 @@ textarea {
 }
 @media screen and (min-width: 992px) {
   body,
-button,
-input,
-select,
-optgroup,
-textarea {
+  button,
+  input,
+  select,
+  optgroup,
+  textarea {
     font-size: 1.125rem;
   }
 }
 @media screen and (min-width: 1600px) {
   body,
-button,
-input,
-select,
-optgroup,
-textarea {
+  button,
+  input,
+  select,
+  optgroup,
+  textarea {
     font-size: 1.25rem;
   }
 }
 
-dfn, cite, em, i {
+dfn,
+cite,
+em,
+i {
   font-style: italic;
 }
 
-p, blockquote, address, pre {
+p,
+blockquote,
+address,
+pre {
   margin-bottom: 1.5rem;
   margin-top: 0;
 }
@@ -457,11 +436,15 @@ pre {
   margin: 1.5rem 0;
 }
 
-code, kbd, tt, var {
+code,
+kbd,
+tt,
+var {
   font-family: "Oxygen Mono", "Menlo", "Monaco", "Consolas", "Liberation Mono", "Courier New", "monospace";
 }
 
-abbr, acronym {
+abbr,
+acronym {
   cursor: help;
 }
 
@@ -471,92 +454,120 @@ mark {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
   line-height: 1.2;
   margin: 1.5em 0 0.5em;
 }
 
-h1, .h1 {
+h1,
+.h1 {
   font-size: 2rem;
 }
 @media screen and (min-width: 992px) {
-  h1, .h1 {
+  h1,
+  .h1 {
     font-size: 2.75rem;
   }
 }
 @media screen and (min-width: 1280px) {
-  h1, .h1 {
+  h1,
+  .h1 {
     font-size: 4rem;
   }
 }
 
-h2, .h2 {
+h2,
+.h2 {
   font-size: 1.75rem;
 }
 @media screen and (min-width: 992px) {
-  h2, .h2 {
+  h2,
+  .h2 {
     font-size: 2rem;
   }
 }
 @media screen and (min-width: 1280px) {
-  h2, .h2 {
+  h2,
+  .h2 {
     font-size: 2.75rem;
   }
 }
 
-h3, .h3 {
+h3,
+.h3 {
   font-size: 1.5rem;
 }
 @media screen and (min-width: 992px) {
-  h3, .h3 {
+  h3,
+  .h3 {
     font-size: 1.75rem;
   }
 }
 @media screen and (min-width: 1280px) {
-  h3, .h3 {
+  h3,
+  .h3 {
     font-size: 2rem;
   }
 }
 
-h4, .h4 {
+h4,
+.h4 {
   font-size: 1.25rem;
 }
 @media screen and (min-width: 992px) {
-  h4, .h4 {
+  h4,
+  .h4 {
     font-size: 1.5rem;
   }
 }
 @media screen and (min-width: 992px) {
-  h4, .h4 {
+  h4,
+  .h4 {
     font-size: 1.75rem;
   }
 }
 
-h5, .h5 {
+h5,
+.h5 {
   font-size: 1.125rem;
 }
 @media screen and (min-width: 992px) {
-  h5, .h5 {
+  h5,
+  .h5 {
     font-size: 1.25rem;
   }
 }
 @media screen and (min-width: 992px) {
-  h5, .h5 {
+  h5,
+  .h5 {
     font-size: 1.5rem;
   }
 }
 
-h6, .h6 {
+h6,
+.h6 {
   font-size: 1rem;
 }
 @media screen and (min-width: 992px) {
-  h6, .h6 {
+  h6,
+  .h6 {
     font-size: 1.125rem;
   }
 }
 @media screen and (min-width: 992px) {
-  h6, .h6 {
+  h6,
+  .h6 {
     font-size: 1.25rem;
   }
 }
@@ -738,7 +749,6 @@ input[type=submit] {
   color: white;
   cursor: pointer;
   display: inline-flex;
-  flex-wrap: wrap;
   padding: 0.25rem 0.75rem;
   text-decoration: none;
   transition: all 0.25s ease-in-out;
@@ -1042,20 +1052,20 @@ object {
 
 @media screen and (min-width: 992px) {
   .single.sidebar-bottom .alignwide,
-.single.sidebar-bottom .alignfull, .single.no-sidebar .alignwide,
-.single.no-sidebar .alignfull,
-.page.sidebar-bottom .alignwide,
-.page.sidebar-bottom .alignfull,
-.page.no-sidebar .alignwide,
-.page.no-sidebar .alignfull {
+  .single.sidebar-bottom .alignfull, .single.no-sidebar .alignwide,
+  .single.no-sidebar .alignfull,
+  .page.sidebar-bottom .alignwide,
+  .page.sidebar-bottom .alignfull,
+  .page.no-sidebar .alignwide,
+  .page.no-sidebar .alignfull {
     margin-left: calc(25% - 25vw);
     margin-right: calc(25% - 25vw);
   }
 }
 @media screen and (min-width: 1280px) {
   .single.sidebar-bottom .alignfull, .single.no-sidebar .alignfull,
-.page.sidebar-bottom .alignfull,
-.page.no-sidebar .alignfull {
+  .page.sidebar-bottom .alignfull,
+  .page.no-sidebar .alignfull {
     margin-left: calc(50% - 50vw);
     margin-right: calc(50% - 50vw);
   }
@@ -1300,7 +1310,7 @@ object {
 }
 @media screen and (min-width: 992px) {
   .menu-item,
-.page_item {
+  .page_item {
     margin-top: 0;
     margin-left: 1rem;
   }
@@ -1321,8 +1331,8 @@ object {
 }
 @media screen and (min-width: 992px) {
   .sub-menu,
-.menu-item-has-childen .children,
-.page_item_has_children .children {
+  .menu-item-has-childen .children,
+  .page_item_has_children .children {
     background-color: white;
     height: max-content;
     left: 0;
@@ -1335,8 +1345,8 @@ object {
     z-index: -10;
   }
   .sub-menu ul,
-.menu-item-has-childen .children ul,
-.page_item_has_children .children ul {
+  .menu-item-has-childen .children ul,
+  .page_item_has_children .children ul {
     position: inherit;
     padding: 0;
   }
@@ -1451,7 +1461,7 @@ object {
 
 @media screen and (min-width: 768px) {
   .hero-background .hero,
-.header-background .hero {
+  .header-background .hero {
     height: 50vw;
     max-height: 992px;
   }
@@ -1502,19 +1512,19 @@ object {
     opacity: 0.9;
   }
   .header-background.dark-filter .main-navigation a:hover,
-.header-background.dark-filter .main-navigation a:focus,
-.header-background.dark-filter .main-navigation .current-menu-item a {
+  .header-background.dark-filter .main-navigation a:focus,
+  .header-background.dark-filter .main-navigation .current-menu-item a {
     color: #fff;
     opacity: 1;
     border-bottom-color: #fff;
   }
   .header-background.dark-filter .main-navigation .sub-menu,
-.header-background.dark-filter .main-navigation .children {
+  .header-background.dark-filter .main-navigation .children {
     color: #677783;
   }
   .header-background.dark-filter .main-navigation .sub-menu a:hover, .header-background.dark-filter .main-navigation .sub-menu a:focus,
-.header-background.dark-filter .main-navigation .children a:hover,
-.header-background.dark-filter .main-navigation .children a:focus {
+  .header-background.dark-filter .main-navigation .children a:hover,
+  .header-background.dark-filter .main-navigation .children a:focus {
     background-color: transparent;
     border-bottom-color: #3d4852;
     color: #3d4852;
@@ -1558,36 +1568,36 @@ object {
 
 @media screen and (min-width: 992px) {
   .single.no-sidebar.hero-background .content-area,
-.single.no-sidebar.header-background .content-area,
-.single.sidebar-bottom.hero-background .content-area,
-.single.sidebar-bottom.header-background .content-area,
-.page.hero-background .content-area,
-.page.header-background .content-area {
+  .single.no-sidebar.header-background .content-area,
+  .single.sidebar-bottom.hero-background .content-area,
+  .single.sidebar-bottom.header-background .content-area,
+  .page.hero-background .content-area,
+  .page.header-background .content-area {
     margin-top: -100px;
     z-index: 100;
   }
 }
 @media screen and (min-width: 1280px) {
   .single.no-sidebar.hero-background .content-area,
-.single.no-sidebar.header-background .content-area,
-.single.sidebar-bottom.hero-background .content-area,
-.single.sidebar-bottom.header-background .content-area,
-.page.hero-background .content-area,
-.page.header-background .content-area {
+  .single.no-sidebar.header-background .content-area,
+  .single.sidebar-bottom.hero-background .content-area,
+  .single.sidebar-bottom.header-background .content-area,
+  .page.hero-background .content-area,
+  .page.header-background .content-area {
     margin-top: -150px;
   }
 }
 
 @media screen and (min-width: 992px) {
   .sidebar-left .content-area,
-.sidebar-right .content-area {
+  .sidebar-right .content-area {
     display: grid;
     grid-auto-flow: row dense;
   }
 }
 @media screen and (min-width: 1280px) {
   .sidebar-left .content-area,
-.sidebar-right .content-area {
+  .sidebar-right .content-area {
     grid-gap: 3rem;
   }
 }
@@ -2037,7 +2047,7 @@ p.has-background {
 }
 @media screen and (min-width: 992px) {
   .nav-links,
-.page-links {
+  .page-links {
     padding: 1.5rem 0;
   }
 }
@@ -2085,7 +2095,7 @@ p.has-background {
 
 @media screen and (max-width: 576px) {
   .prev span,
-.next span {
+  .next span {
     border: 0;
     clip: rect(1px, 1px, 1px, 1px);
     clip-path: inset(50%);

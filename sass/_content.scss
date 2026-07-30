@@ -1,3 +1,5 @@
+@use "variables";
+
 /**************************
  * Content area 
  **************************/
@@ -7,25 +9,25 @@
 
 .content-area {
     margin: 0 auto;
-    max-width: $xxl;
+    max-width: variables.$xxl;
 }
 
 .content-wrapper {
     background-color: white;
-    max-width: $md;
+    max-width: variables.$md;
     margin: 0 auto;
 
-    @media screen and (min-width: $lg) {
-        max-width: $content;
+    @media screen and (min-width: variables.$lg) {
+        max-width: variables.$content;
     }
 
     &.posts-grid {
-        @media screen and (min-width: $lg) {
+        @media screen and (min-width: variables.$lg) {
             display: grid;
-            gap: $sp-xl;
+            gap: variables.$sp-xl;
             grid-auto-flow: row dense;
             grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
-            max-width: $xl;
+            max-width: variables.$xl;
 
             .post {
                 margin-bottom: 0;
@@ -40,30 +42,30 @@
 .single.sidebar-bottom.header-background .content-area,
 .page.hero-background .content-area,
 .page.header-background .content-area {
-    @media screen and (min-width: $lg) {
+    @media screen and (min-width: variables.$lg) {
         margin-top: -100px;
         z-index: 100;
     }
 
-    @media screen and (min-width: $xl) {
+    @media screen and (min-width: variables.$xl) {
         margin-top: -150px;
     }
 }
 
 .sidebar-left .content-area,
 .sidebar-right .content-area {
-    @media screen and (min-width: $lg) {
+    @media screen and (min-width: variables.$lg) {
         display: grid;
         grid-auto-flow: row dense;
     }
 
-    @media screen and (min-width: $xl) {
-        grid-gap: $sp-xl;
+    @media screen and (min-width: variables.$xl) {
+        grid-gap: variables.$sp-xl;
     }
 }
 
 .sidebar-right .content-area {
-    @media screen and (min-width: $lg) {
+    @media screen and (min-width: variables.$lg) {
         grid-template-columns: minmax(0, 2fr) 1fr;
     }
 }
@@ -74,7 +76,7 @@
     }
 
     .main-content {
-        @media screen and (min-width: $lg) {
+        @media screen and (min-width: variables.$lg) {
             grid-column-start: 2;
         }
     }
@@ -84,10 +86,10 @@
 .no-results,
 .error-404 {
     background-color: #fff;
-    border: 1px solid $grey-2;
-    border-top: 8px solid $grey-9;
-    padding: $sp-md;
-    margin-bottom: $sp-xl;
+    border: 1px solid variables.$grey-2;
+    border-top: 8px solid variables.$grey-9;
+    padding: variables.$sp-md;
+    margin-bottom: variables.$sp-xl;
 }
 
 .single .post {
@@ -98,13 +100,13 @@
 .single-post,
 .page {
     .content-wrapper {
-        border-top: 8px solid $grey-9;
+        border-top: 8px solid variables.$grey-9;
     }
 }
 
 .post-thumbnail {
     display: block;
-    margin: #{-$sp-md} #{-$sp-md} #{$sp-md} #{-$sp-md};
+    margin: #{-(variables.$sp-md)} #{-(variables.$sp-md)} #{variables.$sp-md} #{-(variables.$sp-md)};
 
     img {
         display: block;
@@ -120,14 +122,14 @@
         text-decoration: none;
     }
 
-    @media screen and (max-width: $sm) {
-        font-size: $txt-xl;
+    @media screen and (max-width: variables.$sm) {
+        font-size: variables.$txt-xl;
     }
 }
 
 .post-meta {
-    color: $grey-5;
-    font-size: $txt-xs;
+    color: variables.$grey-5;
+    font-size: variables.$txt-xs;
     margin: 0;
 
     a {
@@ -144,10 +146,10 @@
     align-items: center;
     display: inline-flex;
     flex-wrap: wrap;
-    margin-right: $sp-sm;
+    margin-right: variables.$sp-sm;
 
     .icon {
-        margin-right: $sp-2xs;
+        margin-right: variables.$sp-2xs;
     }
 }
 
@@ -169,12 +171,12 @@
 
 .seperator {
     display: inline-block;
-    margin: 0 $sp-3xs;
+    margin: 0 variables.$sp-3xs;
 }
 
 .small-thumbnail {
-    border: 1px solid $grey-2;
-    border-left: 8px solid $grey-9;
+    border: 1px solid variables.$grey-2;
+    border-left: 8px solid variables.$grey-9;
 
     .post-header {
         align-items: center;
@@ -184,14 +186,14 @@
     .post-thumbnail {
         flex-basis: 75px;
         flex-shrink: 0;
-        margin: 0 $sp-sm 0 0;
+        margin: 0 variables.$sp-sm 0 0;
 
         img {
             display: block;
             max-width: 75px;
         }
 
-        @media screen and (min-width: $md) {
+        @media screen and (min-width: variables.$md) {
             flex-basis: 100px;
 
             img {
@@ -199,11 +201,11 @@
             }
         }
 
-        @media screen and (min-width: $lg) {
-            margin-right: $sp-md;
+        @media screen and (min-width: variables.$lg) {
+            margin-right: variables.$sp-md;
         }
 
-        @media screen and (min-width: $xl) {
+        @media screen and (min-width: variables.$xl) {
             flex-basis: 150px;
 
             img {
@@ -215,7 +217,7 @@
 
 .small-thumbnail.has-post-thumbnail {
     .post-header {
-        margin-bottom: $sp-md;
+        margin-bottom: variables.$sp-md;
     }
 
     .post-title {
@@ -229,26 +231,26 @@
 
 .more-link {
     display: inline-block;
-    font-size: $txt-sm;
-    margin-bottom: $sp-md;
+    font-size: variables.$txt-sm;
+    margin-bottom: variables.$sp-md;
     text-transform: uppercase;
 }
 
 .post-footer {
-    border-top: 1px solid $grey-2;
+    border-top: 1px solid variables.$grey-2;
     clear: both;
-    color: $grey-5;
-    font-size: $txt-xs;
-    padding: $sp-sm 0;
+    color: variables.$grey-5;
+    font-size: variables.$txt-xs;
+    padding: variables.$sp-sm 0;
 
-    @media screen and (min-width: $sm ) {
+    @media screen and (min-width: variables.$sm ) {
         align-items: center;
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-end;
 
         .edit-link {
-            margin-left: $sp-md;
+            margin-left: variables.$sp-md;
         }
     }
 }
@@ -266,7 +268,7 @@
     display: flex;
 
     .icon {
-        margin-right: $sp-2xs;
+        margin-right: variables.$sp-2xs;
     }
 }
 
@@ -275,7 +277,7 @@
 }
 
 .sticky {
-    background-color: $grey-9;
+    background-color: variables.$grey-9;
     color: white;
 
     .post-meta,
@@ -287,7 +289,7 @@
     a:hover,
     a:focus {
         background-color: white;
-        color: $grey-9;
+        color: variables.$grey-9;
     }
 }
 

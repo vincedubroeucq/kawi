@@ -1,11 +1,13 @@
+@use "variables";
+
 /***********************************
  * Pagination and posts navigation 
  ***********************************/
 .navigation,
 .pagination {
     background-color: white;
-    max-width: $content;
-    margin: $sp-md auto;
+    max-width: variables.$content;
+    margin: variables.$sp-md auto;
 }
 
 .nav-links,
@@ -13,13 +15,13 @@
     clear: both;
     display: flex;
     flex-wrap: wrap;
-    font-size: $txt-sm;
+    font-size: variables.$txt-sm;
     justify-content: center;
-    margin-bottom: $sp-xl;
-    padding: $sp-sm 0;
+    margin-bottom: variables.$sp-xl;
+    padding: variables.$sp-sm 0;
     text-transform: uppercase;
-    @media screen and (min-width: $lg){
-        padding: $sp-md 0;
+    @media screen and (min-width: variables.$lg){
+        padding: variables.$sp-md 0;
     }
 }
 
@@ -33,17 +35,17 @@
 .current {
     align-items: center;
     display: inline-flex;
-    margin: 0 $sp-3xs;
-    padding: 0 $sp-2xs;
+    margin: 0 variables.$sp-3xs;
+    padding: 0 variables.$sp-2xs;
 }
 
 .current {
-    background: $grey-9;
+    background: variables.$grey-9;
     color: white;
 }
 
 .link-text {
-    margin: 0 $sp-3xs;
+    margin: 0 variables.$sp-3xs;
 }
 
 .nav-previous,
@@ -63,7 +65,7 @@
     margin-left: auto;
 }
 
-@media screen and ( max-width: $sm ){
+@media screen and ( max-width: variables.$sm ){
     .prev span,
     .next span {
         border: 0;

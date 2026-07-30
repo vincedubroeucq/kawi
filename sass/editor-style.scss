@@ -1,16 +1,16 @@
 /*******************!
  *  Editor styles
  *******************/
-@import "variables";
-@import "mixins";
-@import "typography";
-@import "elements";
-@import "media";
-@import "content";
-@import "blocks";
-@import "pagination";
-@import "widgets";
-@import "helpers"; 
+@use "variables";
+@use "mixins";
+@use "typography";
+@use "elements";
+@use "media";
+@use "content";
+@use "blocks";
+@use "pagination";
+@use "widgets";
+@use "helpers"; 
 
 body {
     overflow-x: hidden;
@@ -43,14 +43,14 @@ body {
 
 .wp-block .alignwide,
 .wp-block .alignfull {
-	@media screen and (min-width: $lg){
+	@media screen and (min-width: variables.$lg){
 		margin-left: calc(25% - 25vw);
 		margin-right: calc(25% - 25vw);
 	}
 }
 
 .wp-block .alignfull {
-	@media screen and (min-width: $xl){
+	@media screen and (min-width: variables.$xl){
 		margin-left: calc(50% - 50vw);
 		margin-right: calc(50% - 50vw);
 	} 
@@ -58,9 +58,9 @@ body {
 
 .wp-block-quote.is-large, 
 .wp-block-quote.is-style-large {
-    border-left: 8px solid $grey-9;
-    margin: $sp-md 0;
-    padding: $sp-lg; 
+    border-left: 8px solid variables.$grey-9;
+    margin: variables.$sp-md 0;
+    padding: variables.$sp-lg; 
 }
 
 .wp-block-quote__citation {
@@ -93,14 +93,14 @@ body {
 }
 
 .wp-block-separator.is-style-dots:before {
-    font-size: $txt-5xl;
+    font-size: variables.$txt-5xl;
     letter-spacing: 1em;
 }
 
 .wp-block-table.is-style-stripes {
     border: none;
     tr {
-        background: $grey-1;
+        background: variables.$grey-1;
     }
     tr:nth-child(even){
         background-color: transparent; 
@@ -112,47 +112,47 @@ p.has-background {
 }
 
 .has-small-font-size {
-    font-size: $txt-sm !important;
-    @media screen and ( min-width: $lg ){
-		font-size: $txt-md !important;
+    font-size: variables.$txt-sm !important;
+    @media screen and ( min-width: variables.$lg ){
+		font-size: variables.$txt-md !important;
 	}
 }
 
 .has-lead-font-size {
-    font-size: $txt-lg !important;
-    @media screen and (min-width: $lg) {
-        font-size: $txt-xl !important;
+    font-size: variables.$txt-lg !important;
+    @media screen and (min-width: variables.$lg) {
+        font-size: variables.$txt-xl !important;
     }
-    @media screen and (min-width: $xxl) {
-        font-size: $txt-2xl !important;
+    @media screen and (min-width: variables.$xxl) {
+        font-size: variables.$txt-2xl !important;
     }
 }
 
 .has-large-font-size {
-    font-size: $txt-xl !important;
-    @media screen and (min-width: $lg) {
-        font-size: $txt-2xl !important;
+    font-size: variables.$txt-xl !important;
+    @media screen and (min-width: variables.$lg) {
+        font-size: variables.$txt-2xl !important;
     }
-    @media screen and (min-width: $xxl) {
-        font-size: $txt-3xl !important;
+    @media screen and (min-width: variables.$xxl) {
+        font-size: variables.$txt-3xl !important;
     }
 }
 .has-very-large-font-size {
-    font-size: $txt-2xl !important;
-    @media screen and (min-width: $lg) {
-        font-size: $txt-3xl !important;
+    font-size: variables.$txt-2xl !important;
+    @media screen and (min-width: variables.$lg) {
+        font-size: variables.$txt-3xl !important;
     }
-    @media screen and (min-width: $xxl) {
-        font-size: $txt-4xl !important;
+    @media screen and (min-width: variables.$xxl) {
+        font-size: variables.$txt-4xl !important;
     }
 }
 
 .has-huge-font-size {
-    font-size: $txt-3xl !important;
-    @media screen and (min-width: $lg) {
-        font-size: $txt-4xl !important;
+    font-size: variables.$txt-3xl !important;
+    @media screen and (min-width: variables.$lg) {
+        font-size: variables.$txt-4xl !important;
     }
-    @media screen and (min-width: $xxl) {
-        font-size: $txt-5xl !important;
+    @media screen and (min-width: variables.$xxl) {
+        font-size: variables.$txt-5xl !important;
     }
 }

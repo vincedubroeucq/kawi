@@ -1,3 +1,6 @@
+@use "mixins";
+@use "variables";
+
 /*******************
   Layout
 ********************/
@@ -97,12 +100,12 @@
 	text-align: right;
 }
 .small-caps {
-    color: $grey-7;
-    font-size: $txt-sm;
+    color: variables.$grey-7;
+    font-size: variables.$txt-sm;
     margin: 0;
 	text-transform: uppercase;
 }
-@include helper('font-size', 'txt-', $text-sizes);
+@include mixins.helper('font-size', 'txt-', variables.$text-sizes);
 
 /*******************
   Colors
@@ -110,16 +113,16 @@
 .white {
 	color: #fff;
 }
-@include helper('color', '', $greys );
-@include helper('background-color', 'bg-', $greys );
-@include helper('color', '', $oranges );
-@include helper('background-color', 'bg-', $oranges );
+@include mixins.helper('color', '', variables.$greys );
+@include mixins.helper('background-color', 'bg-', variables.$greys );
+@include mixins.helper('color', '', variables.$oranges );
+@include mixins.helper('background-color', 'bg-', variables.$oranges );
 
 /*******************
   Spacing
 ********************/
-@include spacing-helper('padding', 'p', $spacings);
-@include spacing-helper('margin', 'm', $spacings);
+@include mixins.spacing-helper('padding', 'p', variables.$spacings);
+@include mixins.spacing-helper('margin', 'm', variables.$spacings);
 
 /*******************
   Sizing
@@ -130,8 +133,8 @@
 .w-100 {
 	width: 100%;
 }
-@include helper('max-width', 'mw-', $widths);
-@include helper('min-width', 'minw-', $widths);
+@include mixins.helper('max-width', 'mw-', variables.$widths);
+@include mixins.helper('min-width', 'minw-', variables.$widths);
 
 /**************************
  * Other helper classes

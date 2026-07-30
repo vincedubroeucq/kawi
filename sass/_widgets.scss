@@ -1,10 +1,12 @@
+@use "variables";
+
 /**************************
 * Widgets
 **************************/ 
 .widgets-wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));    
-    grid-gap: $sp-md;
+    grid-gap: variables.$sp-md;
     max-width: none;
 }
 
@@ -14,10 +16,10 @@
 
 .widget {
     background-color: #fff;
-    border-top: 8px solid $grey-9;
-    padding: $sp-sm;
-    @media screen and (min-width: $lg){
-        padding: $sp-md;
+    border-top: 8px solid variables.$grey-9;
+    padding: variables.$sp-sm;
+    @media screen and (min-width: variables.$lg){
+        padding: variables.$sp-md;
     }
 }
 
@@ -32,6 +34,6 @@
         position: static;
         opacity: 1;
         visibility: visible;
-        padding: 0 0 0 $sp-sm;
+        padding: 0 0 0 variables.$sp-sm;
     }
 }

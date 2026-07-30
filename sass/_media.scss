@@ -1,3 +1,6 @@
+@use "mixins";
+@use "variables";
+
 /**************************
  * Media elements
  **************************/
@@ -17,8 +20,8 @@ object {
 }
 
 .icon {
-	height: $txt-xl;
-	width: $txt-xl;
+	height: variables.$txt-xl;
+	width: variables.$txt-xl;
 }
 
 .gallery {
@@ -26,7 +29,7 @@ object {
 	margin-bottom: 1.5em;
 }
 
-@include gallery-columns();
+@include mixins.gallery-columns();
 
 .gallery-item { 
     align-items: center;
@@ -42,7 +45,7 @@ object {
 }
 
 .wp-caption {
-	margin-bottom: $sp-md;
+	margin-bottom: variables.$sp-md;
 	max-width: 100%;
 	a img {
 		display: block;
@@ -50,23 +53,23 @@ object {
 }
 
 .wp-caption-text {
-	font-size: $txt-sm;
-	margin: $sp-2xs 0 0;
+	font-size: variables.$txt-sm;
+	margin: variables.$sp-2xs 0 0;
 	text-align: center;
 }
 
 .wp-block-image .alignleft,
 .alignleft {
 	float: left;
-	margin-right: $sp-md;
-	margin-bottom: $sp-md;
+	margin-right: variables.$sp-md;
+	margin-bottom: variables.$sp-md;
 }
 
 .wp-block-image .alignright,
 .alignright { 
 	float: right;
-	margin-left: $sp-md;
-	margin-bottom: $sp-md;
+	margin-left: variables.$sp-md;
+	margin-bottom: variables.$sp-md;
 }
 
 .aligncenter {
@@ -74,7 +77,7 @@ object {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: $sp-md;
+	margin-bottom: variables.$sp-md;
 }
 
 .alignwide,
@@ -89,13 +92,13 @@ object {
 	&.no-sidebar {
 		.alignwide,
 		.alignfull {
-			@media screen and (min-width: $lg){
+			@media screen and (min-width: variables.$lg){
 				margin-left: calc(25% - 25vw);
 				margin-right: calc(25% - 25vw);
 			}
 		}
 		.alignfull {
-			@media screen and (min-width: $xl){
+			@media screen and (min-width: variables.$xl){
 				margin-left: calc(50% - 50vw);
 				margin-right: calc(50% - 50vw);
 			} 

@@ -1,3 +1,5 @@
+@use "variables";
+
 /**************************
  * Comments area 
  **************************/
@@ -12,8 +14,8 @@
 }
 
 .comment-notes {
-    color: $grey-5;
-    font-size: $txt-sm;
+    color: variables.$grey-5;
+    font-size: variables.$txt-sm;
 }
 
 .comment-form-comment label,
@@ -25,7 +27,7 @@
 
 .comment-list {
     list-style: none;
-    margin-bottom: $sp-xl;
+    margin-bottom: variables.$sp-xl;
     padding: 0;
 }
 
@@ -35,24 +37,24 @@
 
 .comment-body {
     border-left: 8px solid #3d4852;
-    margin-bottom: $sp-md;
+    margin-bottom: variables.$sp-md;
 }
 
 .comment-author { 
     align-items: center;
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: $sp-sm;
+    margin-bottom: variables.$sp-sm;
  
     .avatar {
         border-radius: 50%;
         max-width: 64px;
-        margin-right: $sp-sm;
+        margin-right: variables.$sp-sm;
     }
 }
 
 .bypostauthor .avatar {
-    border: 4px solid $grey-9;
+    border: 4px solid variables.$grey-9;
     max-width: none;
 }
 
@@ -62,9 +64,9 @@
 }
 
 .comment-date {
-    color: $grey-5;
+    color: variables.$grey-5;
     display: block;
-    font-size: $txt-sm;
+    font-size: variables.$txt-sm;
 }
 
 .comment-footer {

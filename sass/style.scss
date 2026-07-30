@@ -48,18 +48,18 @@ Screenshot image from StockSnap.io (https: //stocksnap.io/photo/AAJD6NGTZE) Lice
 # Helpers
 --------------------------------------------------------------*/
 
-@import "variables";
-@import "mixins";
-@import "normalize";
-@import "typography";
-@import "elements";
-@import "forms";
-@import "media";
-@import "header";
-@import "content";
-@import "blocks";
-@import "pagination";
-@import "comments";
-@import "footer";
-@import "widgets";
-@import "helpers";
+@use "variables";
+@use "mixins";
+@use "normalize";
+@use "typography";
+@use "elements";
+@use "forms";
+@use "media";
+@use "header";
+@use "content";
+@use "blocks";
+@use "pagination";
+@use "comments";
+@use "footer";
+@use "widgets";
+@use "helpers";

@@ -1,3 +1,5 @@
+@use "variables";
+
 /**************************
  * Footer
  **************************/
@@ -15,49 +17,49 @@
 }
 
 .site-footer {
-    border-top: 1px solid $grey-2;
-    color: $grey-5;
-    font-size: $txt-sm;
+    border-top: 1px solid variables.$grey-2;
+    color: variables.$grey-5;
+    font-size: variables.$txt-sm;
 }
 
 .footer-wrapper {
     text-align: center;
-    @media screen and (min-width: $md){
+    @media screen and (min-width: variables.$md){
         display: flex;
         justify-content: space-between;
         text-align: left;
     }
-    @media screen and (min-width: $lg){
+    @media screen and (min-width: variables.$lg){
         align-items: center;
-        padding-top: $sp-sm;
-        padding-bottom: $sp-sm;
+        padding-top: variables.$sp-sm;
+        padding-bottom: variables.$sp-sm;
     }
 }
 
 .footer-menu-section {
     a {
         border-top: none;
-        font-size: $txt-xs;
+        font-size: variables.$txt-xs;
     }
-    @media screen and (min-width: $md){
+    @media screen and (min-width: variables.$md){
         text-align: right;
     }
-    @media screen and (min-width: $lg){
+    @media screen and (min-width: variables.$lg){
         align-items: flex-end;
         display: flex;
     }
 }
 
 .footer-menu {
-    margin-top: $sp-sm;  
+    margin-top: variables.$sp-sm;  
     .menu-item {
         display: inline-block;
-        margin: 0 $sp-3xs;
+        margin: 0 variables.$sp-3xs;
     }
     .current-menu-item a {
         border-bottom-color: transparent;
     }
-    @media screen and (min-width: $md){
+    @media screen and (min-width: variables.$md){
         margin-top: 0;
         text-align: right;
     }
@@ -66,7 +68,7 @@
 
 .footer-social-menu {
     margin: 0;
-    @media screen and (min-width: $md){
-        margin-left: $sp-2xs;
+    @media screen and (min-width: variables.$md){
+        margin-left: variables.$sp-2xs;
     }
 }

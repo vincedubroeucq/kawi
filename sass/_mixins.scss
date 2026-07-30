@@ -1,3 +1,5 @@
+@use "variables";
+
 @mixin helper( $property, $prefix, $map, $breakpoints_map: false ) {
     @each $key, $value in $map {
         .#{$prefix}#{$key}{
@@ -86,20 +88,20 @@
     }
     .gallery-columns-3 {
         grid-template-columns: 1fr 1fr;
-        @media screen and (min-width: $sm){
+        @media screen and (min-width: variables.$sm){
             grid-template-columns: repeat( 3, 1fr );
         }
     }
     @for $i from 4 through 9 {
         .gallery-columns-#{$i}{
             grid-template-columns: repeat( 2, 1fr );
-            @media screen and (min-width: $sm){
+            @media screen and (min-width: variables.$sm){
                 grid-template-columns: repeat( 3, 1fr );
             }
-            @media screen and (min-width: $md){
+            @media screen and (min-width: variables.$md){
                 grid-template-columns: repeat( 4, 1fr );
             }
-            @media screen and (min-width: $lg){
+            @media screen and (min-width: variables.$lg){
                 grid-template-columns: repeat( #{$i}, 1fr );
             }
         }

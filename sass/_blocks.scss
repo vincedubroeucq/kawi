@@ -1,3 +1,5 @@
+@use "variables";
+
 /**************************
  * Gutenberg Blocks
  **************************/
@@ -35,58 +37,58 @@ p.has-background {
     color: #f1f5f8;
 }
 .has-small-font-size {
-    font-size: $txt-sm;
-    @media screen and ( min-width: $lg ){
-		font-size: $txt-md;
+    font-size: variables.$txt-sm;
+    @media screen and ( min-width: variables.$lg ){
+		font-size: variables.$txt-md;
 	}
 }
 .has-lead-font-size {
-    font-size: $txt-lg;
-    @media screen and (min-width: $lg) {
-        font-size: $txt-xl;
+    font-size: variables.$txt-lg;
+    @media screen and (min-width: variables.$lg) {
+        font-size: variables.$txt-xl;
     }
-    @media screen and (min-width: $xxl) {
-        font-size: $txt-2xl;
+    @media screen and (min-width: variables.$xxl) {
+        font-size: variables.$txt-2xl;
     }
 }
 .has-large-font-size {
-    font-size: $txt-xl;
-    @media screen and (min-width: $lg) {
-        font-size: $txt-2xl;
+    font-size: variables.$txt-xl;
+    @media screen and (min-width: variables.$lg) {
+        font-size: variables.$txt-2xl;
     }
-    @media screen and (min-width: $xxl) {
-        font-size: $txt-3xl;
+    @media screen and (min-width: variables.$xxl) {
+        font-size: variables.$txt-3xl;
     }
 }
 .has-very-large-font-size {
-    font-size: $txt-2xl;
-    @media screen and (min-width: $lg) {
-        font-size: $txt-3xl;
+    font-size: variables.$txt-2xl;
+    @media screen and (min-width: variables.$lg) {
+        font-size: variables.$txt-3xl;
     }
-    @media screen and (min-width: $xxl) {
-        font-size: $txt-4xl;
+    @media screen and (min-width: variables.$xxl) {
+        font-size: variables.$txt-4xl;
     }
 }
 .has-huge-font-size {
-    font-size: $txt-3xl;
-    @media screen and (min-width: $lg) {
-        font-size: $txt-4xl;
+    font-size: variables.$txt-3xl;
+    @media screen and (min-width: variables.$lg) {
+        font-size: variables.$txt-4xl;
     }
-    @media screen and (min-width: $xxl) {
-        font-size: $txt-5xl;
+    @media screen and (min-width: variables.$xxl) {
+        font-size: variables.$txt-5xl;
     }
 }
 
 .wp-block-media-text,
 .wp-block-archives-dropdown {
-    margin-bottom: $sp-md;
+    margin-bottom: variables.$sp-md;
 }
 
 .wp-block-column {
-    margin-bottom: $sp-md;
-    padding: $sp-sm;
-    @media screen and (min-width: $lg){
-        padding: $sp-md;
+    margin-bottom: variables.$sp-md;
+    padding: variables.$sp-sm;
+    @media screen and (min-width: variables.$lg){
+        padding: variables.$sp-md;
     }
     @media screen and (min-width: 782px){
         &:not(:first-child) {
@@ -97,7 +99,7 @@ p.has-background {
 
 .wp-block-media-text {
     display: block;
-    @media screen and (min-width: $lg){
+    @media screen and (min-width: variables.$lg){
         display: grid;
     }
 }
@@ -108,8 +110,8 @@ p.has-background {
 
 .wp-block-quote.is-large,
 .wp-block-quote.is-style-large {
-    margin: $sp-md 0;
-    padding: $sp-lg;
+    margin: variables.$sp-md 0;
+    padding: variables.$sp-lg;
     p {
         font-size: 1.125em;
     }
@@ -130,14 +132,14 @@ p.has-background {
     }
     &.is-style-dots:before {
         letter-spacing: 1em;
-        font-size: $txt-5xl;
+        font-size: variables.$txt-5xl;
     }
 }
 
 .wp-block-table.is-style-stripes {
     border: none;
     tr {
-        background: $grey-1;
+        background: variables.$grey-1;
     }
     tr:nth-child(even){
         background-color: transparent; 
@@ -145,7 +147,7 @@ p.has-background {
 }
 
 .video-player {
-	margin: $sp-md 0;
+	margin: variables.$sp-md 0;
 }
 
 .wp-block-embed.is-type-video .wp-block-embed__wrapper {
